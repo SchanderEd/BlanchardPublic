@@ -1,146 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blanchard</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/choices.min.css">
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Blanchard</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="header-container">
-                <div class="logo">
-            <h1><a href="" class="logo-link"><img src="img/logo-header.svg" alt="Blanchard" class="logo-img"></a></h1>
+  <header class="header">
+    <h1 class="blanchard-heading visually-hidden">Главная страница Blanchard</h1>
+    <div class="header__top__bg-top">
+      <div class="container header__container-top">
+        <div class="header__logo">
+          <a href="#" class="logo__link"><img src="img/logo.svg" alt="Blanchard" class="logo__img"></a>
         </div>
-        <nav class="nav-header">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="" class="nav-link">О нас</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Галерея</span></a></li>
-                <li class="nav-item"><a href="" class="nav-link">Каталог</a></li>
-                <li class="nav-item"><a href="" class="nav-link">События</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Издания</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Проекты</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
-            </ul>
+        <nav class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">О нас</a></li>
+            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Галерея</a></li>
+            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Каталог</a></li>
+            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">События</a></li>
+            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Издания</a></li>
+            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Проекты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Контакты</a></li>
+          </ul>
         </nav>
         <div class="header-enter">
-            <a href="#" class="header-enter__img_link"><span class="header-enter__img"></span></a>
-            <div class="header-enter__block">
-                <a href="#" class="header-enter__link">Войти</a>
-            </div>
+          <a href="#" class="header-enter__link btn-hover btn-focus btn-active">Войти</a>
         </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="main-container">
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide slide-one"></div>
-                  <div class="swiper-slide slide-two"></div>
-                  <div class="swiper-slide slide-three"></div>
-                </div>
-               </div> 
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Реализм<span class="main-nav__arrow"></span></a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Импрессионизм<span class="main-nav__arrow"></span></a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Постимпрессионизм<span class="main-nav__arrow"></span></a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Авангард<span class="main-nav__arrow"></span></a></li>
-                    <li class="main-nav__item"><a href="" class="main-nav__link">Футуризм<span class="main-nav__arrow main-nav__arrow__5"></span></a></li>
-                </ul>
-                <div class="search-container">
-                    <form action="" class="search">
-                        <button type="submit" class="search__btn reset_btn"></button>
-                        <input type="search" placeholder="Поиск по сайту" class="search__input reset_input">
-                    </form>
-                </div>
-            </nav>
-            <div class="main-banner">
-                <h2 class="main-banner__heading">Прикоснитесь к прекрасному</h2>
-            </div>
-            <div class="main-banner__text_block">
-                <p class="main-banner__text">
-                    Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
-                </p>
-            </div>
-            <div class="subscription-block">
-                <a href="#" class="subscription-link">Подписаться на рассылку</a>
-            </div>
-        </div>
-        <div class="about-us-container">
-                <h3 class="about-us__heading">О нас</h3>
-            <div class="about-us__text_container">
-                <p class="about-us__text">
-                    Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
-                </p>
-            </div>
-        </div>
-        <div class="gallery-container">
-            <div class="gallery-heading_block">
-                <h2 class="gallery-heading">Галерея</h2>
-            </div>
-            <div class="select-gallery-heading">
-                <h4 class="select-gallery-heading__text">Фильтр:</h4>
-            </div>
-            <div class="select-container">
-                <select name="select" id="SelectCustom" class="select-list">
-                    <option value="" class="SelectOption">Живопись</option>
-                    <option value="" class="SelectOption">Рисунок</option>
-                    <option value="" class="SelectOption">Скульптура</option>
-                </select>
-                </div>
-                <div class="remark">
-                    <p class="remark__text">
-                        Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="reamrk__text--link">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
-                    </p>
-                </div>
-        </div>
-    </main>
+      </div>
+    </div>
+    <div class="header__bottom__bg-bottom">
+      <div class="container header__container-bottom">
+        <ul class="header__bottom__list">
+          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Реализм</button>
+            <ul class="header__bottom__submenu-one submenu" data-simplebar>
+              <li class="submenu__item submenu-one__bg-1"><a href="#" class="submenu__link">Тинторетто</a></li>
+              <li class="submenu__item submenu-one__bg-2"><a href="#" class="submenu__link">Фридрих</a></li>
+              <li class="submenu__item submenu-one__bg-3"><a href="#" class="submenu__link">Леонардо</a></li>
+              <li class="submenu__item submenu-one__bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
+            </ul>
+          </li>
+          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Импрессионизм</button>
+            <ul class="header__bottom__submenu-two submenu" data-simplebar>
+              <li class="submenu__item submenu-two__bg-1"><a href="#" class="submenu__link">Моне</a></li>
+              <li class="submenu__item submenu-two__bg-2"><a href="#" class="submenu__link">Сислей</a></li>
+              <li class="submenu__item submenu-two__bg-3"><a href="#" class="submenu__link">Мане</a></li>
+              <li class="submenu__item submenu-two__bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
+            </ul>
+          </li>
+          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Постимпрессионизм</button>
+            <ul class="header__bottom__submenu-three submenu" data-simplebar>
+              <li class="submenu__item submenu-three__bg-1"><a href="#" class="submenu__link">Ван Гог</a></li>
+              <li class="submenu__item submenu-three__bg-2"><a href="#" class="submenu__link">Сезанн</a></li>
+              <li class="submenu__item submenu-three__bg-3"><a href="#" class="submenu__link">Гоген</a></li>
+              <li class="submenu__item submenu-three__bg-4"><a href="#" class="submenu__link">Сёра</a></li>
+            </ul>
+          </li>
+          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Авангард</button>
+            <ul class="header__bottom__submenu-four submenu" data-simplebar>
+              <li class="submenu__item submenu-four__bg-1"><a href="#" class="submenu__link">Кандинский</a></li>
+              <li class="submenu__item submenu-four__bg-2"><a href="#" class="submenu__link">Маринетти</a></li>
+              <li class="submenu__item submenu-four__bg-3"><a href="#" class="submenu__link">Малевич</a></li>
+              <li class="submenu__item submenu-four__bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
+            </ul>
+          </li>
+          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Футуризм</button>
+            <ul class="header__bottom__submenu-five submenu" data-simplebar>
+              <li class="submenu__item submenu-five__bg-1 "><a href="#" class="submenu__link">Карра</a></li>
+              <li class="submenu__item submenu-five__bg-2 "><a href="#" class="submenu__link">Прателла</a></li>
+              <li class="submenu__item submenu-five__bg-3 "><a href="#" class="submenu__link">Северини</a></li>
+              <li class="submenu__item submenu-five__bg-4 "><a href="#" class="submenu__link">Балла</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form action="#" class="header__bottom_search">
+          <button class="search__btn reset_btn"></button>
+          <input type="search" placeholder="Поиск по сайту" class="search__input reset_input">
+        </form>
+      </div>
+    </div>
+  </header>
 
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-          // Optional parameters
-          loop: true,
-    
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
-    
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-    
-          // And if we need scrollbar
-          scrollbar: {
-            hide: true,
-          },
-        });
-      </script>
-
-    <script src="js/choices.min.js"></script>
-
-    <script>
-
-        const element = document.querySelector('#SelectCustom')
-        const choices = new Choices(element, {
-            searchEnabled: false,
-            itemSelectText: '',
-        });
-
-    </script>
+  <script>
+    new SimpleBar(document.getElementById('myElement'), { autoHide: false });
+  </script>
 </body>
+
 </html>
