@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Blanchard</title>
@@ -15,72 +15,102 @@
 <body>
   <header class="header">
     <h1 class="blanchard-heading visually-hidden">Главная страница Blanchard</h1>
-    <div class="header__top__bg-top">
-      <div class="container header__container-top">
-        <div class="header__logo">
-          <a href="#" class="logo__link"><img src="img/logo.svg" alt="Blanchard" class="logo__img"></a>
-        </div>
-        <nav class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">О нас</a></li>
-            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Галерея</a></li>
-            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Каталог</a></li>
-            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">События</a></li>
-            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Издания</a></li>
-            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Проекты</a></li>
-            <li class="nav__item"><a href="#" class="nav__link btn-hover btn-focus btn-active">Контакты</a></li>
+    <div class="header__top">
+      <div class="container container-top">
+        <a href="#" class="logo"><img src="img/logo.svg" alt="Blanchard" class="logo__img"></a>
+        <nav class="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">О нас</a></li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Галерея</a>
+            </li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Каталог</a>
+            </li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">События</a>
+            </li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Издания</a>
+            </li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Проекты</a>
+            </li>
+            <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <div class="header-enter">
-          <a href="#" class="header-enter__link btn-hover btn-focus btn-active">Войти</a>
-        </div>
+        <a href="#" class="enter-link btn-hover btn-focus btn-active"><svg class="enter-link__svg" width="13"
+            height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
+          </svg>Войти</a>
       </div>
     </div>
-    <div class="header__bottom__bg-bottom">
-      <div class="container header__container-bottom">
-        <ul class="header__bottom__list">
-          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Реализм</button>
-            <ul class="header__bottom__submenu-one submenu" data-simplebar>
+    <div class="header__bottom">
+      <div class="container container-bottom">
+        <ul class="bottom__list">
+          <li class="bottom__item"><button class="bottom__btn reset_btn">Реализм<span class="bottom__svg-wrapper"><svg width="12"
+                class="bottom__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1"/>
+              </svg></span></button>
+            <ul class="bottom__submenu-one submenu" data-simplebar>
               <li class="submenu__item submenu-one__bg-1"><a href="#" class="submenu__link">Тинторетто</a></li>
               <li class="submenu__item submenu-one__bg-2"><a href="#" class="submenu__link">Фридрих</a></li>
               <li class="submenu__item submenu-one__bg-3"><a href="#" class="submenu__link">Леонардо</a></li>
               <li class="submenu__item submenu-one__bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
+              <li class="submenu__item submenu-one__bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
+              <li class="submenu__item submenu-one__bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
             </ul>
           </li>
-          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Импрессионизм</button>
-            <ul class="header__bottom__submenu-two submenu" data-simplebar>
+          <li class="bottom__item"><button class="bottom__btn reset_btn ">Импрессионизм<span class="bottom__svg-wrapper"><svg width="12"
+            class="bottom__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L6 6L1 1"/>
+          </svg></span></button>
+            <ul class="bottom__submenu-two submenu" data-simplebar>
               <li class="submenu__item submenu-two__bg-1"><a href="#" class="submenu__link">Моне</a></li>
               <li class="submenu__item submenu-two__bg-2"><a href="#" class="submenu__link">Сислей</a></li>
               <li class="submenu__item submenu-two__bg-3"><a href="#" class="submenu__link">Мане</a></li>
               <li class="submenu__item submenu-two__bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
+              <li class="submenu__item submenu-two__bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
+              <li class="submenu__item submenu-two__bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
             </ul>
           </li>
-          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Постимпрессионизм</button>
-            <ul class="header__bottom__submenu-three submenu" data-simplebar>
+          <li class="bottom__item"><button class="bottom__btn reset_btn">Постимпрессионизм<span class="bottom__svg-wrapper"><svg width="12"
+            class="bottom__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L6 6L1 1"/>
+          </svg></span></button>
+            <ul class="bottom__submenu-three submenu" data-simplebar>
               <li class="submenu__item submenu-three__bg-1"><a href="#" class="submenu__link">Ван Гог</a></li>
               <li class="submenu__item submenu-three__bg-2"><a href="#" class="submenu__link">Сезанн</a></li>
               <li class="submenu__item submenu-three__bg-3"><a href="#" class="submenu__link">Гоген</a></li>
               <li class="submenu__item submenu-three__bg-4"><a href="#" class="submenu__link">Сёра</a></li>
+              <li class="submenu__item submenu-three__bg-4"><a href="#" class="submenu__link">Сёра</a></li>
             </ul>
           </li>
-          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Авангард</button>
-            <ul class="header__bottom__submenu-four submenu" data-simplebar>
+          <li class="bottom__item"><button class="bottom__btn reset_btn">Авангард<span class="bottom__svg-wrapper"><svg width="12"
+            class="bottom__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L6 6L1 1"/>
+          </svg></span></button>
+            <ul class="bottom__submenu-four submenu" data-simplebar>
               <li class="submenu__item submenu-four__bg-1"><a href="#" class="submenu__link">Кандинский</a></li>
               <li class="submenu__item submenu-four__bg-2"><a href="#" class="submenu__link">Маринетти</a></li>
               <li class="submenu__item submenu-four__bg-3"><a href="#" class="submenu__link">Малевич</a></li>
               <li class="submenu__item submenu-four__bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
+              <li class="submenu__item submenu-four__bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
+              <li class="submenu__item submenu-four__bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
             </ul>
           </li>
-          <li class="header__bottom__item"><button class="header__bottom_btn reset_btn btn-focus">Футуризм</button>
-            <ul class="header__bottom__submenu-five submenu" data-simplebar>
+          <li class="bottom__item"><button class="bottom__btn reset_btn">Футуризм<span class="bottom__svg-wrapper"><svg width="12"
+            class="bottom__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L6 6L1 1"/>
+          </svg></span></button>
+            <ul class="bottom__submenu-five submenu" data-simplebar>
               <li class="submenu__item submenu-five__bg-1 "><a href="#" class="submenu__link">Карра</a></li>
               <li class="submenu__item submenu-five__bg-2 "><a href="#" class="submenu__link">Прателла</a></li>
               <li class="submenu__item submenu-five__bg-3 "><a href="#" class="submenu__link">Северини</a></li>
               <li class="submenu__item submenu-five__bg-4 "><a href="#" class="submenu__link">Балла</a></li>
+              <li class="submenu__item submenu-five__bg-4 "><a href="#" class="submenu__link">Балла</a></li>
+              <li class="submenu__item submenu-five__bg-4 "><a href="#" class="submenu__link">Балла</a></li>
             </ul>
           </li>
         </ul>
-        <form action="#" class="header__bottom_search">
+        <form action="#" class="bottom_search">
           <button class="search__btn reset_btn"></button>
           <input type="search" placeholder="Поиск по сайту" class="search__input reset_input">
         </form>
