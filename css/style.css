@@ -223,8 +223,14 @@ a {
 .bottom-list__btn:focus:not(:focus-visible),
 .bottom-list__btn:focus-visible,
 .bottom-list__btn.active--btn .bottom-list__svg {
+  background-color: inherit;
   color: #7943A4;
   stroke: #7943A4;
+}
+
+.bottom-list__btn:focus {
+    background-color: #7943A4;
+    color: var(--color-text);
 }
 
 .active--btn .bottom-list__svg {
@@ -260,9 +266,6 @@ a {
       padding-bottom: 40px;
   }
 
-  .container-dropdown-list__item {
-
-  }
   .container-dropdown-list__item:last-child {
     border: 0;
   }
