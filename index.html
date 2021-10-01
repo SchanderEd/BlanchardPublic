@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>Blanchard</title>
 </head>
@@ -47,74 +47,86 @@
     <div class="header__bottom">
       <div class="container container-bottom">
         <ul class="bottom-list">
-          <li class="bottom-list__item animate"><button class="bottom-list__btn reset-btn btn-focus" data-path="content-first">Реализм<span
-                class="bottom-list__svg-wrapper"><svg width="12" class="bottom-list__svg" height="7" viewBox="0 0 12 7"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" />
-                </svg></span></button>
-            <ul class="bottom-list__submenu-first submenu animate__animated animate__fadeIn" data-target="content-first" data-simplebar>
-              <li class="submenu__item submenu__first-item-bg-1"><a href="#" class="submenu__link">Тинторетто</a></li>
-              <li class="submenu__item submenu__first-item-bg-2"><a href="#" class="submenu__link">Фридрих</a></li>
-              <li class="submenu__item submenu__first-item-bg-3"><a href="#" class="submenu__link">Леонардо</a></li>
-              <li class="submenu__item submenu__first-item-bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
-              <li class="submenu__item submenu__first-item-bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
-              <li class="submenu__item submenu__first-item-bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
-            </ul>
+          <li class="bottom-list__item animate">
+            <button class="bottom-list__btn reset-btn">Реализм<span class="bottom-list__svg-wrapper"><svg width="12"
+              class="bottom-list__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" />
+            </svg></span></button>
+            <div class="container-dropdown submenu animate__animated animate__fadeIn" data-simplebar>
+              <ul class="container-dropdown-list">
+                <li class="container-dropdown-list__item submenu__item submenu__first-item-bg-1"><a href="#" class="submenu__link">Тинторетто</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__first-item-bg-2"><a href="#" class="submenu__link">Фридрих</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__first-item-bg-3"><a href="#" class="submenu__link">Леонардо</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__first-item-bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__first-item-bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__first-item-bg-4"><a href="#" class="submenu__link">Верроккьо</a></li>
+              </ul>
+            </div>
           </li>
-          <li class="bottom-list__item animate"><button class="bottom-list__btn reset-btn btn-focus" data-path="content-second">Импрессионизм<span
-                class="bottom-list__svg-wrapper"><svg width="12" class="bottom-list__svg" height="7" viewBox="0 0 12 7"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" />
-                </svg></span></button>
-            <ul class="bottom-list__submenu-second submenu animate__animated animate__fadeIn" data-target="content-second" data-simplebar>
-              <li class="submenu__item submenu__second-item-bg-1"><a href="#" class="submenu__link">Моне</a></li>
-              <li class="submenu__item submenu__second-item-bg-2"><a href="#" class="submenu__link">Сислей</a></li>
-              <li class="submenu__item submenu__second-item-bg-3"><a href="#" class="submenu__link">Мане</a></li>
-              <li class="submenu__item submenu__second-item-bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
-              <li class="submenu__item submenu__second-item-bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
-              <li class="submenu__item submenu__second-item-bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
-            </ul>
+          <li class="bottom-list__item animate">
+            <button class="bottom-list__btn reset-btn">Импрессионизм<span class="bottom-list__svg-wrapper"><svg width="12"
+              class="bottom-list__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" />
+            </svg></span></button>
+            <div class="container-dropdown submenu submenu-second animate__animated animate__fadeIn" data-simplebar>
+              <ul class="container-dropdown-list">
+                <li class="container-dropdown-list__item submenu__item submenu__second-item-bg-1"><a href="#" class="submenu__link">Моне</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__second-item-bg-2"><a href="#" class="submenu__link">Сислей</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__second-item-bg-3"><a href="#" class="submenu__link">Мане</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__second-item-bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__second-item-bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__second-item-bg-4"><a href="#" class="submenu__link">Ренуар</a></li>
+              </ul>
+            </div>
           </li>
-          <li class="bottom-list__item animate"><button class="bottom-list__btn reset-btn btn-focus" data-path="content-third">Постимпрессионизм<span
-                class="bottom-list__svg-wrapper"><svg width="12" class="bottom-list__svg" height="7" viewBox="0 0 12 7"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" />
-                </svg></span></button>
-            <ul class="bottom-list__submenu-third submenu animate__animated animate__fadeIn" data-target="content-third" data-simplebar>
-              <li class="submenu__item submenu__third-item-bg-1"><a href="#" class="submenu__link">Ван Гог</a></li>
-              <li class="submenu__item submenu__third-item-bg-2"><a href="#" class="submenu__link">Сезанн</a></li>
-              <li class="submenu__item submenu__third-item-bg-3"><a href="#" class="submenu__link">Гоген</a></li>
-              <li class="submenu__item submenu__third-item-bg-4"><a href="#" class="submenu__link">Сёра</a></li>
-              <li class="submenu__item submenu__third-item-bg-4"><a href="#" class="submenu__link">Сёра</a></li>
-            </ul>
+          <li class="bottom-list__item animate">
+            <button class="bottom-list__btn reset-btn">Постимпрессионизм<span class="bottom-list__svg-wrapper"><svg width="12"
+              class="bottom-list__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" />
+            </svg></span></button>
+            <div class="container-dropdown submenu submenu-third animate__animated animate__fadeIn" data-simplebar>
+              <ul class="container-dropdown-list">
+                <li class="container-dropdown-list__item submenu__item submenu__third-item-bg-1"><a href="#" class="submenu__link">Ван Гог</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__third-item-bg-2"><a href="#" class="submenu__link">Сезанн</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__third-item-bg-3"><a href="#" class="submenu__link">Гоген</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__third-item-bg-4"><a href="#" class="submenu__link">Сёра</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__third-item-bg-4"><a href="#" class="submenu__link">Сёра</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__third-item-bg-4"><a href="#" class="submenu__link">Сёра</a></li>
+              </ul>
+            </div>
           </li>
-          <li class="bottom-list__item animate"><button class="bottom-list__btn reset-btn btn-focus" data-path="content-fourth">Авангард<span
-                class="bottom-list__svg-wrapper"><svg width="12" class="bottom-list__svg" height="7" viewBox="0 0 12 7"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" />
-                </svg></span></button>
-            <ul class="bottom-list__submenu-fourth submenu animate__animated animate__fadeIn" data-target="content-fourth" data-simplebar>
-              <li class="submenu__item submenu__fourth-item-bg-1"><a href="#" class="submenu__link">Кандинский</a></li>
-              <li class="submenu__item submenu__fourth-item-bg-2"><a href="#" class="submenu__link">Маринетти</a></li>
-              <li class="submenu__item submenu__fourth-item-bg-3"><a href="#" class="submenu__link">Малевич</a></li>
-              <li class="submenu__item submenu__fourth-item-bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
-              <li class="submenu__item submenu__fourth-item-bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
-              <li class="submenu__item submenu__fourth-item-bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
-            </ul>
+          <li class="bottom-list__item animate">
+            <button class="bottom-list__btn reset-btn">Авангард<span class="bottom-list__svg-wrapper"><svg width="12"
+              class="bottom-list__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" />
+            </svg></span></button>
+            <div class="container-dropdown submenu submenu-fourth animate__animated animate__fadeIn" data-simplebar>
+              <ul class="container-dropdown-list">
+                <li class="container-dropdown-list__item submenu__item submenu__fourth-item-bg-1"><a href="#" class="submenu__link">Кандинский</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fourth-item-bg-2"><a href="#" class="submenu__link">Маринетти</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fourth-item-bg-3"><a href="#" class="submenu__link">Малевич</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fourth-item-bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fourth-item-bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fourth-item-bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fourth-item-bg-4"><a href="#" class="submenu__link">Пикассо</a></li>
+              </ul>
+            </div>
           </li>
-          <li class="bottom-list__item animate"><button class="bottom-list__btn reset-btn btn-focus" data-path="content-fifth">Футуризм<span
-                class="bottom-list__svg-wrapper"><svg width="12" class="bottom-list__svg" height="7" viewBox="0 0 12 7"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" />
-                </svg></span></button>
-            <ul class="bottom-list__submenu-fifth submenu animate__animated animate__fadeIn" data-target="content-fifth" data-simplebar>
-              <li class="submenu__item submenu__fifth-item-bg-1"><a href="#" class="submenu__link">Карра</a></li>
-              <li class="submenu__item submenu__fifth-item-bg-2"><a href="#" class="submenu__link">Прателла</a></li>
-              <li class="submenu__item submenu__fifth-item-bg-3"><a href="#" class="submenu__link">Северини</a></li>
-              <li class="submenu__item submenu__fifth-item-bg-4"><a href="#" class="submenu__link">Балла</a></li>
-              <li class="submenu__item submenu__fifth-item-bg-4"><a href="#" class="submenu__link">Балла</a></li>
-              <li class="submenu__item submenu__fifth-item-bg-4"><a href="#" class="submenu__link">Балла</a></li>
-            </ul>
+          <li class="bottom-list__item animate">
+            <button class="bottom-list__btn reset-btn">Футуризм<span class="bottom-list__svg-wrapper"><svg width="12"
+              class="bottom-list__svg" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 1L6 6L1 1" />
+            </svg></span></button>
+            <div class="container-dropdown submenu animate__animated animate__fadeIn" data-simplebar>
+              <ul class="container-dropdown-list">
+                <li class="container-dropdown-list__item submenu__item submenu__fifth-item-bg-1"><a href="#" class="submenu__link">Карра</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fifth-item-bg-2"><a href="#" class="submenu__link">Прателла</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fifth-item-bg-3"><a href="#" class="submenu__link">Северини</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fifth-item-bg-4"><a href="#" class="submenu__link">Балла</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fifth-item-bg-4"><a href="#" class="submenu__link">Балла</a></li>
+                <li class="container-dropdown-list__item submenu__item submenu__fifth-item-bg-4"><a href="#" class="submenu__link">Балла</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
         <form action="#" class="header__search">
