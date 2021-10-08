@@ -723,7 +723,7 @@ a {
     line-height: 32px;
 }
 
-.gallery__link {
+.galery__link {
     color: var(--color-hover);
     font-weight: 600;
 }
