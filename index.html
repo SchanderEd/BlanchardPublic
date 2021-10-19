@@ -11,11 +11,13 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <title>Blanchard</title>
 </head>
 
@@ -411,20 +413,167 @@
             </p>
           </div>
           <div class="catalog__accordeon">
-            <ul class="catalog__accordeon-list">
-              <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1400 по 1499
-                  гг.</button></li>
+            <ul class="catalog__accordeon-list accordion" id="accordion">
+              <li class="catalog__accordeon-item"><button
+                  class="catalog__accordeon-btn catalog__accordeon-btn-1 reset-btn">C 1400 по 1499
+                  гг.<svg width="50" height="50" class="arrow-accordeon">
+                    <use href="#arrow-accordeon"></use>
+                  </svg></button>
+                <div class="catalog__accordeon-col" style="display: flex;">
+                  <ul class="catalog__accordeon-list-artist">
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Бенедетто ди Биндо</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Бергоньоне, Амброджо</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Биссоло,
+                        Франческо</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Больтраффио, Джованни</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Бонсиньори, Франческо</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Боттичини, Рафаэлло</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Брамантино</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Бреа,
+                        Людовико</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Бьяджо
+                        д’Антонио Туччи</button></li>
+                  </ul>
+                  <ul class="catalog__accordeon-list-artist catalog__accordeon-list-artist-two">
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Веккьетта</button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Андреа
+                        Верроккьо</button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Доменико
+                        Гирландайо</button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Беноццо
+                        Гоццоли</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Граначчи, Франческо</button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Грегорио
+                        ди Чекко</button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Джованни
+                        да Удине</button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Джованни
+                        ди Паоло</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Джорджоне</button></li>
+                  </ul>
+                  <ul class=catalog__accordeon-list-artist">
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Парентино, Бернардо</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Пезеллино </button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Пьетро
+                        Перуджино </button></li>
+                    <li class="catalog__accordion-item"><button class="catalog__accordion-btn-artist reset-btn btn-focus">Перуцци,
+                        Бальдассаре</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Пизанелло</button></li>
+                    <li class="catalog__accordion-item"><button
+                        class="catalog__accordion-btn-artist reset-btn btn-focus">Пинтуриккьо</button></li>
+                  </ul>
+                </div>
+              </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1500 по 1599
-                  гг.</button></li>
+                  гг.<svg width="50" height="50" class="arrow-accordeon">
+                    <use href="#arrow-accordeon"></use>
+                  </svg></button>
+                <div class="catalog__accordion-empty" style="display: flex;">
+                  <div class="catalog__empty-left">
+                    <div class="catalog__accordion-empty-block"></div>
+                  </div>
+                  <div class="catalog__empty-right">
+                    <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                    <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                      себя
+                    </p><a href="#" class="catalog__accordion-empty-link">В галерею</a>
+                  </div>
+                </div>
+              </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1600 по 1699
-                  гг.</button></li>
+                  гг.<svg width="50" height="50" class="arrow-accordeon">
+                    <use href="#arrow-accordeon"></use>
+                  </svg></button>
+                <div class="catalog__accordion-empty" style="display: flex;">
+                  <div class="catalog__empty-left">
+                    <div class="catalog__accordion-empty-block"></div>
+                  </div>
+                  <div class="catalog__empty-right">
+                    <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                    <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                      себя
+                    </p><a href="#" class="catalog__accordion-empty-link">В галерею</a>
+                  </div>
+                </div>
+              </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1700 по 1799
-                  гг.</button></li>
+                  гг.<svg width="50" height="50" class="arrow-accordeon">
+                    <use href="#arrow-accordeon"></use>
+                  </svg></button>
+                <div class="catalog__accordion-empty" style="display: flex;">
+                  <div class="catalog__empty-left">
+                    <div class="catalog__accordion-empty-block"></div>
+                  </div>
+                  <div class="catalog__empty-right">
+                    <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                    <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                      себя
+                    </p><a href="#" class="catalog__accordion-empty-link">В галерею</a>
+                  </div>
+                </div>
+              </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1800 по 1899
-                  гг.</button></li>
+                  гг.<svg width="50" height="50" class="arrow-accordeon">
+                    <use href="#arrow-accordeon"></use>
+                  </svg></button>
+                <div class="catalog__accordion-empty" style="display: flex;">
+                  <div class="catalog__empty-left">
+                    <div class="catalog__accordion-empty-block"></div>
+                  </div>
+                  <div class="catalog__empty-right">
+                    <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                    <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                      себя
+                    </p><a href="#" class="catalog__accordion-empty-link">В галерею</a>
+                  </div>
+                </div>
+              </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1900 по 1999
-                  гг.</button></li>
-              <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 2000 г.</button>
+                  гг.<svg width="50" height="50" class="arrow-accordeon">
+                    <use href="#arrow-accordeon"></use>
+                  </svg></button>
+                <div class="catalog__accordion-empty" style="display: flex;">
+                  <div class="catalog__empty-left">
+                    <div class="catalog__accordion-empty-block"></div>
+                  </div>
+                  <div class="catalog__empty-right">
+                    <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                    <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                      себя
+                    </p><a href="#" class="catalog__accordion-empty-link">В галерею</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 2000 г.<svg
+                    width="50" height="50" class="arrow-accordeon">
+                    <use href="#arrow-accordeon"></use>
+                  </svg></button>
+                <div class="catalog__accordion-empty" style="display: flex;">
+                  <div class="catalog__empty-left">
+                    <div class="catalog__accordion-empty-block"></div>
+                  </div>
+                  <div class="catalog__empty-right">
+                    <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                    <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                      себя
+                    </p><a href="#" class="catalog__accordion-empty-link">В галерею</a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -433,6 +582,17 @@
     </section>
 
   </main>
+
+  <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="arrow-accordeon">
+      <path
+        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
+      <path
+        d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" />
+      <path d="M33.3333 23.3333L25 31.6667L16.6667 23.3333" stroke="black" />
+    </symbol>
+  </svg>
+
 
   <script src="js/bottom-list__item-click.js"></script>
   <script src="js/choices.min.js"></script>
@@ -489,6 +649,15 @@
   </script>
 
   <script src="js/tabs.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+    });
+  </script>
+
 
 </body>
 
