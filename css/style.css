@@ -1047,7 +1047,7 @@ a {
     margin-right: 50px;
 }
 
-.catlog__tab-btn {
+.catalog__tab-btn {
     position: relative;
     width: 46px;
     height: 46px;
@@ -1059,34 +1059,22 @@ a {
     transition: .3s ease-in-out;
 }
 
-.catlog__tab-btn:hover, .catlog__tab-btn:focus {
+.catalog__tab-btn:hover, .catalog__tab-btn:focus {
     filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
     border-radius: 50px;
     transition: filter .3s ease-in-out;
 }
 
-.catlog__tab-btn:active {
+.catalog__tab-btn--active::before {
+    position: absolute;
+    content: '';
+    top: -12px;
+    left: -13px;
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
     border: 2px solid #7943A4;
 }
-
-.catlog__tab-btn:after {
-    content: '';
-    position: absolute;
-    top: -13px;
-    left: -13px;
-    width: 66px;
-    height: 66px;
-    border: 2px solid transparent;
-    border-radius: 100px;
-    border: 2px solid transparent;
-    filter: drop-shadow(0px 0px 0px);
-}
-
-.catlog__tab-btn:focus:after {
-    border-color: #7943A4;
-    transition: border-color .3s ease-in-out;
-}
-
 
 .btn-french {
     background-image: url(../img/catalog-french.jpg);
@@ -1139,6 +1127,14 @@ a {
     font-weight: 600;
 }
 
+.about-artist-content {
+    display: none;
+}
+
+.about-artist-content--active {
+    display: block;
+}
+
 .catalog__about-artist-text, .catalog__about-artist-dates {
     padding: 0;
     margin: 0;
@@ -1158,15 +1154,46 @@ a {
     line-height: 32px;
 }
 
+.catalog__about-artist-empty-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 750px;
+    min-height: 470px;
+    background-color: #ECECEC;
+}
+
+.catalog__heading-artist-empty {
+    color: #666666;
+}
+
+.catalog__about-artist-empty-know {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.catalog__about-artist-text-empty {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.catalog__about-artist-empty-link {
+    color: #9D5CD0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
 .ui-accordion {
     padding: 0;
     font-size: 24px;
-}
-
-.ui-accordion .ui-accordion-header {
-    margin: 0;
-    margin-bottom: 32px;
-    padding: 41px 0px;
 }
 
 .ui-widget-content {
@@ -1181,13 +1208,13 @@ a {
 .ui-accordion .ui-accordion-content {
     width: 670px;
     padding: 0;
+    padding-top: 32px;
     overflow: hidden;
 }
 
 .catalog__accordeon-item {
     width: 800px;
     padding: 0px;
-    padding-bottom: 20px;
 }
 
 .catalog__accordion-empty {
@@ -1246,12 +1273,21 @@ a {
 }
 
 .ui-accordion .ui-accordion-header {
-    border-top: 1px solid #CACACA;
+    margin: 0;
+    padding: 41px 0px 40px;
     border-bottom: 1px solid #CACACA;
+    border-top: 1px solid #CACACA;
 }
 
 .catalog__accordeon-btn-1 {
     margin-bottom: 50px;
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
+}
+
+.catalog__accordeon-btn-2 {
+    border-top: 1px solid #CACACA;
+    border-bottom: 1px solid #CACACA;
 }
 
 .catalog__accordion-btn-artist {
@@ -1277,11 +1313,25 @@ a {
     border-color: #9D5CD0;
 }
 
-.arrow-accordeon {
+.catalog__arrow-wrapper {
     position: absolute;
+    display: flex;
+    width: 52px;
+    height: 52px;
     top: 30px;
     left: 750px;
-    fill: #ECECEC;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    background-color: #ECECEC;
+}
+
+.arrow-accordeon {
+    position: absolute;
+    width: 20px;
+    height: 11px;
+    fill: none;
     transition: .3s ease-in-out;
 }
 
@@ -1294,22 +1344,27 @@ a {
     border-color: #7943A4;
 }
 
-.catalog__accordeon-btn:hover .arrow-accordeon {
-    fill: #D1A9F0;
-    transition: fill .3s ease-in-out;
+.catalog__accordeon-btn:hover .catalog__arrow-wrapper {
+    background-color: #D1A9F0;
+    transition: background-color .3s ease-in-out;
+}
+
+.catalog__accordeon-btn:focus .catalog__arrow-wrapper {
+    background-color: #D1A9F0;
+    border-color: #9D5CD0;
+    transition: border-color .3s ease-in-out;
 }
 
 .catalog__accordeon-btn:focus .arrow-accordeon {
     transform: rotate(180deg);
     transition: transform .3s ease-in-out;
-    fill: #D1A9F0;
-    stroke:#9D5CD0;
-    border-radius: 100px;
 }
 
 .catalog__accordeon-col {
     position: relative;
     width: 670px;
+    height: auto;
+    margin-bottom: 27px;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -1319,10 +1374,6 @@ a {
 .catalog__accordeon-list-artist {
     margin: 0;
     padding: 0;
-}
-
-.catalog__accordeon-list-artist-two {
-    padding-left: 41px;
 }
 
 .ui-icon {
