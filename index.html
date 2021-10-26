@@ -385,11 +385,11 @@
         <div class="catalog__top">
           <h2 class="catalog__heading heading-section">Каталог</h2>
           <ul class="catalog__list">
-            <li class="catalog__item"><button class="catalog__tab-btn btn-french reset-btn"></button></li>
-            <li class="catalog__item"><button class="catalog__tab-btn btn-germany reset-btn"></button></li>
-            <li class="catalog__item"><button class="catalog__tab-btn btn-italy reset-btn"></button></li>
-            <li class="catalog__item"><button class="catalog__tab-btn btn-russia reset-btn"></button></li>
-            <li class="catalog__item"><button class="catalog__tab-btn btn-belgium reset-btn"></button></li>
+            <li class="catalog__item"><button class="catalog__tab-btn btn-french reset-btn" data-path="EmptyCountry"></button></li>
+            <li class="catalog__item"><button class="catalog__tab-btn btn-germany reset-btn" data-path="EmptyCountry"></button></li>
+            <li class="catalog__item"><button class="catalog__tab-btn catalog__tab-btn--active btn-italy reset-btn" data-path="Italy"></button></li>
+            <li class="catalog__item"><button class="catalog__tab-btn btn-russia reset-btn" data-path="EmptyCountry"></button></li>
+            <li class="catalog__item"><button class="catalog__tab-btn btn-belgium reset-btn" data-path="EmptyCountry"></button></li>
           </ul>
         </div>
         <div class="catalog__middle">
@@ -399,7 +399,7 @@
             нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на
             независимые элементы. </p>
         </div>
-        <div class="catalog__bottom animate">
+        <div class="catalog__bottom catalog__bottom--active animate" data-target="Italy">
           <div class="catalog__about-artist about-artist-content about-artist-content--active animate__animated animate__fadeInLeft" data-target="DomenicoBtn">
             <img src="img/catalog-img-Domenico.jpg" alt="" class="catalog__img-artist">
             <h3 class="catalog__heading-artist">Доменико Гирландайо</h3>
@@ -427,9 +427,7 @@
             <ul class="catalog__accordeon-list accordion" id="accordion">
               <li class="catalog__accordeon-item"><button
                   class="catalog__accordeon-btn catalog__accordeon-btn-1 reset-btn">C 1400 по 1499
-                  гг<span class="catalog__arrow-wrapper"><svg width="50" height="50" class="arrow-accordeon">
-                      <use href="#arrow-accordeon"></use>
-                    </svg></span></button>
+                  гг.</button>
                 <div class="catalog__accordeon-col" style="display: flex;">
                   <ul class="catalog__accordeon-list-artist">
                     <li class="catalog__accordion-item"><button
@@ -461,7 +459,7 @@
                         class="catalog__accordion-btn-artist reset-btn btn-focus" data-path="emptyBtn">Андреа
                         Верроккьо</button></li>
                     <li class="catalog__accordion-item"><button
-                        class="catalog__accordion-btn-artist reset-btn btn-focus" data-path="DomenicoBtn">Доменико
+                        class="catalog__accordion-btn-artist catalog__accordeon-btn--active reset-btn btn-focus" data-path="DomenicoBtn">Доменико
                         Гирландайо</button></li>
                     <li class="catalog__accordion-item"><button
                         class="catalog__accordion-btn-artist reset-btn btn-focus" data-path="emptyBtn">Беноццо
@@ -500,9 +498,7 @@
               </li>
               <li class="catalog__accordeon-item"><button
                   class="catalog__accordeon-btn catalog__accordeon-btn-2 reset-btn">C 1500 по 1599
-                  гг.<span class="catalog__arrow-wrapper"><svg width="50" height="50" class="arrow-accordeon">
-                      <use href="#arrow-accordeon"></use>
-                    </svg></span></button>
+                  гг.</button>
                 <div class="catalog__accordion-empty" style="display: flex;">
                   <div class="catalog__empty-left">
                     <div class="catalog__accordion-empty-block"></div>
@@ -516,9 +512,7 @@
                 </div>
               </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1600 по 1699
-                  гг.<span class="catalog__arrow-wrapper"><svg width="50" height="50" class="arrow-accordeon">
-                      <use href="#arrow-accordeon"></use>
-                    </svg></span></button>
+                  гг.</button>
                 <div class="catalog__accordion-empty" style="display: flex;">
                   <div class="catalog__empty-left">
                     <div class="catalog__accordion-empty-block"></div>
@@ -533,9 +527,7 @@
               </li>
               <li class="catalog__accordeon-item"><button
                   class="catalog__accordeon-btn catalog__accordeon-btn-4 reset-btn">C 1700 по 1799
-                  гг.<span class="catalog__arrow-wrapper"><svg width="50" height="50" class="arrow-accordeon">
-                      <use href="#arrow-accordeon"></use>
-                    </svg></span></button>
+                  гг.</button>
                 <div class="catalog__accordion-empty" style="display: flex;">
                   <div class="catalog__empty-left">
                     <div class="catalog__accordion-empty-block"></div>
@@ -549,9 +541,7 @@
                 </div>
               </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1800 по 1899
-                  гг.<span class="catalog__arrow-wrapper"><svg width="50" height="50" class="arrow-accordeon">
-                      <use href="#arrow-accordeon"></use>
-                    </svg></span></button>
+                  гг.</button>
                 <div class="catalog__accordion-empty" style="display: flex;">
                   <div class="catalog__empty-left">
                     <div class="catalog__accordion-empty-block"></div>
@@ -565,9 +555,7 @@
                 </div>
               </li>
               <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1900 по 1999
-                  гг.<span class="catalog__arrow-wrapper"><svg width="50" height="50" class="arrow-accordeon">
-                      <use href="#arrow-accordeon"></use>
-                    </svg></span></button>
+                  гг.</button>
                 <div class="catalog__accordion-empty" style="display: flex;">
                   <div class="catalog__empty-left">
                     <div class="catalog__accordion-empty-block"></div>
@@ -580,10 +568,7 @@
                   </div>
                 </div>
               </li>
-              <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 2000 г.<span
-                    class="catalog__arrow-wrapper"><svg width="50" height="50" class="arrow-accordeon">
-                      <use href="#arrow-accordeon"></use>
-                    </svg></span></button>
+              <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 2000 г.</button>
                 <div class="catalog__accordion-empty" style="display: flex;">
                   <div class="catalog__empty-left">
                     <div class="catalog__accordion-empty-block"></div>
@@ -598,6 +583,126 @@
               </li>
             </ul>
           </div>
+        
+      </div>
+
+      <div class="catalog__bottom animate" data-target="EmptyCountry">
+        <div class="catalog__about-artist about-artist-content--active animate__animated animate__fadeInLeft">
+          <div class="catalog__about-artist-empty about-artist-content--active animate__animated animate__fadeInLeft">
+            <div class="catalog__about-artist-empty-img-wrapper">
+            <img src="img/artist-empty.png" alt="" class="catalog__img-artist-empty">
+            <h3 class="catalog__heading-artist-empty">Х - Художник</h3>
+            </div>
+            <p class="catalog__about-artist-text catalog__about-artist-text-empty">
+              <span class="catalog__about-artist-empty-know">Что мы о нём знаем?.</span>
+              Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
+            </p>
+            <a href="#" class="catalog__about-artist-empty-link">В галерею</a>
+          </div>
+        </div>
+        <div class="catalog__accordeon">
+          <ul class="catalog__accordeon-list accordion" id="accordionEmpty">
+            <li class="catalog__accordeon-item"><button
+                class="catalog__accordeon-btn catalog__accordeon-btn-1 reset-btn">C 1400 по 1499
+                гг.</button>
+                <div class="catalog__accordion-empty catalog__accordion-empty-country" style="display: flex;">
+                  <div class="catalog__empty-left">
+                    <div class="catalog__accordion-empty-block"></div>
+                  </div>
+                  <div class="catalog__empty-right">
+                    <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                    <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                      себя
+                    </p><a href="#" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
+                  </div>
+                </div>
+            </li>
+            <li class="catalog__accordeon-item"><button
+                class="catalog__accordeon-btn catalog__accordeon-btn-2 reset-btn">C 1500 по 1599
+                гг.</button>
+              <div class="catalog__accordion-empty" style="display: flex;">
+                <div class="catalog__empty-left">
+                  <div class="catalog__accordion-empty-block"></div>
+                </div>
+                <div class="catalog__empty-right">
+                  <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                  <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                    себя
+                  </p><a href="#" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1600 по 1699
+                гг.</button>
+              <div class="catalog__accordion-empty" style="display: flex;">
+                <div class="catalog__empty-left">
+                  <div class="catalog__accordion-empty-block"></div>
+                </div>
+                <div class="catalog__empty-right">
+                  <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                  <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                    себя
+                  </p><a href="#" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__accordeon-item"><button
+                class="catalog__accordeon-btn catalog__accordeon-btn-4 reset-btn">C 1700 по 1799
+                гг.</button>
+              <div class="catalog__accordion-empty" style="display: flex;">
+                <div class="catalog__empty-left">
+                  <div class="catalog__accordion-empty-block"></div>
+                </div>
+                <div class="catalog__empty-right">
+                  <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                  <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                    себя
+                  </p><a href="#" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1800 по 1899
+                гг.</button>
+              <div class="catalog__accordion-empty" style="display: flex;">
+                <div class="catalog__empty-left">
+                  <div class="catalog__accordion-empty-block"></div>
+                </div>
+                <div class="catalog__empty-right">
+                  <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                  <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                    себя
+                  </p><a href="#" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 1900 по 1999
+                гг.</button>
+              <div class="catalog__accordion-empty" style="display: flex;">
+                <div class="catalog__empty-left">
+                  <div class="catalog__accordion-empty-block"></div>
+                </div>
+                <div class="catalog__empty-right">
+                  <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                  <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                    себя
+                  </p><a href="#" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn">C 2000 г.</button>
+              <div class="catalog__accordion-empty" style="display: flex;">
+                <div class="catalog__empty-left">
+                  <div class="catalog__accordion-empty-block"></div>
+                </div>
+                <div class="catalog__empty-right">
+                  <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
+                  <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
+                    себя
+                  </p><a href="#" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -672,12 +777,14 @@
   <script>
     $(function () {
       $("#accordion").accordion();
+      $("#accordionEmpty").accordion();
     });
   </script>
 
 
   <script src="js/catalog-btn.js"></script>
   <script src="js/tabs.js"></script>
+  <script src="js/tabs-artist-list.js"></script>
 
 </body>
 
