@@ -97,18 +97,7 @@
 	margin: 2px 0 0 0;
 	padding: .5em .5em .5em .7em;
 	font-size: 100%;
-	border-bottom: 1px solid #cacaca;
-	border-top: 1px solid #cacaca;
 }
-
-.ui-state-active {
-	border-color: #7943A4 !important;
-}
-
-.ui-state-hover {
-	border-color: #9D5CD0 !important;
-}
-
 .ui-accordion .ui-accordion-content {
 	padding: 1em 2.2em;
 	border-top: 0;
@@ -1088,7 +1077,7 @@ a.ui-button:active,
 }
 .ui-state-active .ui-icon,
 .ui-button:active .ui-icon {
-	background-image: none;
+	background-image: url("images/ui-icons_ffffff_256x240.png");
 }
 .ui-state-highlight .ui-icon,
 .ui-button .ui-state-highlight.ui-icon {

@@ -1110,7 +1110,7 @@ a {
 }
 
 .catalog__middle {
-    margin-bottom: 39px;
+    margin-bottom: 27px;
 }
 
 .catalog__bottom {
@@ -1119,6 +1119,7 @@ a {
 
 .catalog__bottom--active {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .catalog__img-artist {
@@ -1140,6 +1141,7 @@ a {
 
 .about-artist-content--active {
     display: block;
+    padding-top: 11px;
 }
 
 .catalog__about-artist-text, .catalog__about-artist-dates {
@@ -1198,6 +1200,7 @@ a {
     line-height: 22px;
 }
 
+
 .ui-accordion {
     padding: 0;
     font-size: 24px;
@@ -1215,13 +1218,18 @@ a {
 .ui-accordion .ui-accordion-content {
     width: 670px;
     padding: 0;
-    padding-top: 32px;
+    padding-top: 43px;
     overflow: hidden;
 }
 
 .catalog__accordeon-item {
     width: 800px;
     padding: 0px;
+    line-height: 32px;
+}
+
+.catalog__accordeon-item:last-child {
+    border-bottom: 1px solid #cacaca;
 }
 
 .catalog__accordion-empty {
@@ -1277,15 +1285,8 @@ a {
     color: var(--color-text-black);
     font-weight: 600;
     line-height: 32px;
-}
-
-.catalog__accordeon-btn-1 {
-    margin-bottom: 50px;
-    border-radius: 0px;
-}
-
-.catalog__accordeon-btn-2 {
-    border-radius: 0px;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid transparent;
 }
 
 .catalog__accordion-btn-artist {
@@ -1308,7 +1309,7 @@ a {
 
 .ui-widget button:hover {
     color: var(--color-hover);
-    border-color: #9D5CD0;
+    border-bottom: 1px solid #9D5CD0;
 }
 
 .catalog__arrow-wrapper {
@@ -1327,10 +1328,6 @@ a {
     color: #9D5CD0;
 }
 
-.catalog__accordeon-btn:focus {
-    border-color: #7943A4;
-}
-
 .catalog__accordeon-btn--active {
     color: #D1A9F0;
 }
@@ -1339,7 +1336,7 @@ a {
     position: relative;
     width: 670px;
     height: auto;
-    margin-bottom: 27px;
+    margin-bottom: 13px;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -1354,16 +1351,17 @@ a {
 .ui-accordion .ui-accordion-header {
     margin: 0;
     padding: 0px 0px 30px;
-
     border-radius: 0px;
 }
 
-.ui-state-active {
+.ui-widget .ui-state-active {
     color: #7943A4;
+    border-color: #7943A4;
 }
 
-.ui-state-hover {
+.ui-widget .ui-state-hover {
     color: #9D5CD0;
+    border-color: #9D5CD0;
 }
 
 .ui-icon {
@@ -1371,8 +1369,8 @@ a {
     width: 52px;
     height: 52px;
     margin: 0;
-    top: 34px;
-    left: 749px;
+    top: 42px;
+    left: 750px;
     align-items: center;
     justify-content: center;
     border: 2px solid transparent;
