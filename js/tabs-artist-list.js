@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
           tabContent.classList.remove('catalog__bottom--active')
         })
         document.querySelector(`[data-target="${path}"]`).classList.add('catalog__bottom--active')
+
+        $( '.accordion').accordion( 'refresh' );
       })
-    })
-  })
+    });
+  });
   

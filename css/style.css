@@ -1110,7 +1110,7 @@ a {
 }
 
 .catalog__middle {
-    margin-bottom: 27px;
+    margin-bottom: 15px;
 }
 
 .catalog__bottom {
@@ -1141,7 +1141,7 @@ a {
 
 .about-artist-content--active {
     display: block;
-    padding-top: 11px;
+    padding-top: 22px;
 }
 
 .catalog__about-artist-text, .catalog__about-artist-dates {
@@ -1212,13 +1212,14 @@ a {
 
 .catalog__accordeon {
     padding: 0px;
+    padding-top: 23px;
     padding-left: 50px;
 }
 
 .ui-accordion .ui-accordion-content {
     width: 670px;
     padding: 0;
-    padding-top: 43px;
+    padding-top: 31px;
     overflow: hidden;
 }
 
@@ -1369,7 +1370,7 @@ a {
     width: 52px;
     height: 52px;
     margin: 0;
-    top: 42px;
+    top: 45px;
     left: 750px;
     align-items: center;
     justify-content: center;
@@ -1378,6 +1379,18 @@ a {
     background-image: none;
     background-color: #ECECEC;
     transition: .3s ease-in-out;
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image: none;
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon,
+.ui-button:hover .ui-icon,
+.ui-button:focus .ui-icon {
+    background-image: none;
 }
 
 .ui-icon::before {
@@ -1391,6 +1404,8 @@ a {
 
 .ui-state-active .ui-icon,
 .ui-button:active .ui-icon {
+    top: 30px;
+    left: 748px;
     border: 2px solid #9D5CD0;
     border-radius: 100px;
     background-color: #D1A9F0;
@@ -1415,7 +1430,11 @@ a {
     line-height: 22px;
 }
 
+.ui-accordion-header-icon {
+    position: relative;
+}
 
-.catalog__accordion-empty-country {
-    height: 311px;
+.ui-accordion-header-icon .ui-icon .ui-icon-triangle-1-s {
+    top: 30px;
+    left: 748px;
 }

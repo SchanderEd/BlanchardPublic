@@ -8,5 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('about-artist-content--active')
     })
+    
   })
 })
