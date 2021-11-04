@@ -1212,7 +1212,7 @@ a {
 
 .catalog__accordeon {
     padding: 0px;
-    padding-top: 23px;
+    padding-top: 11px;
     padding-left: 50px;
 }
 
@@ -1337,7 +1337,7 @@ a {
     position: relative;
     width: 670px;
     height: auto;
-    margin-bottom: 13px;
+    margin-bottom: 28px;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -1351,7 +1351,7 @@ a {
 
 .ui-accordion .ui-accordion-header {
     margin: 0;
-    padding: 0px 0px 30px;
+    padding: 0px 0px 42px;
     border-radius: 0px;
 }
 
@@ -1404,7 +1404,7 @@ a {
 
 .ui-state-active .ui-icon,
 .ui-button:active .ui-icon {
-    top: 30px;
+    top: 42px;
     left: 748px;
     border: 2px solid #9D5CD0;
     border-radius: 100px;
@@ -1435,6 +1435,5 @@ a {
 }
 
 .ui-accordion-header-icon .ui-icon .ui-icon-triangle-1-s {
-    top: 30px;
-    left: 748px;
+    position: relative;
 }
