@@ -1212,14 +1212,14 @@ a {
 
 .catalog__accordeon {
     padding: 0px;
-    padding-top: 11px;
+    padding-top: 23px;
     padding-left: 50px;
 }
 
 .ui-accordion .ui-accordion-content {
     width: 670px;
     padding: 0;
-    padding-top: 31px;
+    padding-top: 33px;
     overflow: hidden;
 }
 
@@ -1237,6 +1237,7 @@ a {
     display: flex;
     justify-content: start;
     align-items: center;
+    height: 312px;
 }
 
 .catalog__accordion-empty-block {
@@ -1281,8 +1282,6 @@ a {
 }
 
 .catalog__accordeon-btn {
-    width: 100%;
-    text-align: left;
     color: var(--color-text-black);
     font-weight: 600;
     line-height: 32px;
@@ -1350,8 +1349,15 @@ a {
 }
 
 .ui-accordion .ui-accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 100%;
     margin: 0;
-    padding: 0px 0px 42px;
+    padding: 0;
+    padding-top: 31px;
+    padding-bottom: 30px;
     border-radius: 0px;
 }
 
@@ -1366,12 +1372,12 @@ a {
 }
 
 .ui-icon {
+    position: static;
     display: flex;
-    width: 52px;
+    width: 51px;
     height: 52px;
     margin: 0;
-    top: 45px;
-    left: 750px;
+    padding-top: 2px;
     align-items: center;
     justify-content: center;
     border: 2px solid transparent;
@@ -1404,8 +1410,6 @@ a {
 
 .ui-state-active .ui-icon,
 .ui-button:active .ui-icon {
-    top: 42px;
-    left: 748px;
     border: 2px solid #9D5CD0;
     border-radius: 100px;
     background-color: #D1A9F0;
@@ -1428,12 +1432,4 @@ a {
     font-family: 'OpenSans';
     font-weight: 400;
     line-height: 22px;
-}
-
-.ui-accordion-header-icon {
-    position: relative;
-}
-
-.ui-accordion-header-icon .ui-icon .ui-icon-triangle-1-s {
-    position: relative;
 }
