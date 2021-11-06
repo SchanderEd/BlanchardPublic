@@ -33,6 +33,10 @@ a {
     z-index: 2;
 }
 
+.hidden {
+    display: none;
+}
+
 .reset-btn {
     border: none;
     background: transparent;
@@ -1115,6 +1119,7 @@ a {
 
 .catalog__bottom {
     display: none;
+    margin-bottom: 80px;
 }
 
 .catalog__bottom--active {
@@ -1149,7 +1154,7 @@ a {
     margin: 0;
 }
 
-.catalog__about-artist-dates {
+.subtitle-style {
     display: block;
     font-size: 12px;
     font-weight: 400;
@@ -1432,4 +1437,131 @@ a {
     font-family: 'OpenSans';
     font-weight: 400;
     line-height: 22px;
+}
+
+/* Events */
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text-black);
+}
+
+.event__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+}
+
+.events__item {
+    display: none;
+    flex-direction: column;
+    width: 500px;
+    min-height: 700px;
+    margin-bottom: 50px;
+    border: 1px solid #cacaca;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.events__item--active {
+    display: flex;
+}
+
+.events-bg {
+    display: block;
+    min-width: 500px;
+    min-height: 300px;
+    margin-bottom: 11px;
+}
+
+.events-bg-1 {
+    background-image: url(../img/events-1.jpg);
+}
+
+.events-bg-2 {
+    background-image: url(../img/events-2.jpg);
+}
+
+.events-bg-3 {
+    background-image: url(../img/events-3.jpg);
+}
+
+.events-bg-4 {
+    background-image: url(../img/events-4.jpg);
+}
+
+.events-bg-5 {
+    background-image: url(../img/events-5.jpg);
+}
+
+.events__subtitle {
+    padding: 0;
+    padding-right: 20px;
+    margin: 0;
+    line-height: 16px;
+    text-align: end;
+}
+
+.events__subtitle-date {
+    padding: 0;
+    padding-right: 20px;
+    margin: 0;
+    text-align: end;
+}
+
+.events__content-block {
+    display: block;
+    min-height: 194px;
+    padding: 0px 50px;
+    margin-bottom: 83px;
+}
+
+.events__item-heading {
+    width: 420px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+.events__content {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.events__link-wrapper {
+    display: block;
+    width: 92px;
+    padding: 0px 50px;
+}
+
+.events__link {
+    color: #9D5CD0;
+    font-size: 16px;
+    line-height: 32px;
+    border-bottom: 1px solid #9D5CD0;
+}
+
+.events__bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.events__btn {
+    width: 192px;
+    padding: 16px 35px;
+    color: #9D5CD0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border: 2px solid #9D5CD0;
+    border-radius: 100px;
 }
