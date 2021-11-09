@@ -1,10 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const eventsItem = document.querySelectorAll('events__item')
-    const eventsBtn = document.querySelector('.events__btn')
+document.addEventListener('DOMContentLoaded', function () {
+    const allBtns = document.querySelector('.events__btn')
 
-
-    eventsBtn.addEventListener('click', () => {
-        eventsItem.classList.add('events__item--active')
-        eventsBtn.classList.add('hidden')
+    allBtns.addEventListener('click', function(allEvents){
+        document.querySelectorAll('.events__item').forEach(function (allEvents) {
+            allEvents.classList.remove('hidden')
+        });
+    allBtns.classList.add('hidden')
     })
-})
+
+    document.querySelector(`[data-target="${path}"]`).classList.add('events__item--active');
+});
+
