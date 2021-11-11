@@ -1453,13 +1453,14 @@ a {
 }
 
 .events__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 500px;
     min-height: 700px;
     margin-right: 50px;
     margin-bottom: 50px;
-    padding-top: 311px;
+    padding-bottom: 60px;
     border: 1px solid #cacaca;
     background-repeat: no-repeat;
     background-position: top;
@@ -1469,32 +1470,8 @@ a {
     margin-right: 0px;
 }
 
-.events__item--active {
-    display: flex;
-}
-
-.events-bg {
-    display: block;
-}
-
-.events-bg-1 {
-    background-image: url(../img/events-1.jpg);
-}
-
-.events-bg-2 {
-    background-image: url(../img/events-2.jpg);
-}
-
-.events-bg-3 {
-    background-image: url(../img/events-3.jpg);
-}
-
-.events-bg-4 {
-    background-image: url(../img/events-4.jpg);
-}
-
-.events-bg-5 {
-    background-image: url(../img/events-5.jpg);
+.events__img {
+    margin-bottom: 11px;
 }
 
 .events__subtitle {
@@ -1512,13 +1489,6 @@ a {
     text-align: end;
 }
 
-.events__content-block {
-    display: block;
-    min-height: 242px;
-    padding: 0px 50px;
-    margin-bottom: 39px;
-}
-
 .events__item-heading {
     width: 451px;
     margin: 0;
@@ -1530,16 +1500,18 @@ a {
 }
 
 .events__content {
-    width: 400px;
-    min-height: 128px;
+    width: 450px;
     margin: 0;
-    margin-bottom: 83px;
     padding: 0;
+    padding-left: 50px;
     font-size: 16px;
     line-height: 32px;
 }
 
 .events__link {
+    position: absolute;
+    left: 49px;
+    bottom: 39px;
     color: #9D5CD0;
     font-size: 16px;
     line-height: 32px;
@@ -1570,6 +1542,5 @@ a {
 .events__btn:hover{
     color: var(--color-text);
     background-color: #9D5CD0;
-    transition: background-color .3s ease-in-out;
-    transition: color .3s ease-in-out;
+    transition: background-color color .3s ease-in-out;
 }
