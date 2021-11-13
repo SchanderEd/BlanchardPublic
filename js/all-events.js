@@ -8,6 +8,5 @@ document.addEventListener('DOMContentLoaded', function () {
     allBtns.classList.add('hidden')
     })
 
-    document.querySelector(`[data-target="${path}"]`).classList.add('events__item--active');
 });
 
