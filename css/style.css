@@ -1675,10 +1675,14 @@ a {
     transition: border-color .3s ease-in-out;
 }
 
-.check:focus + .editions__checkbox::before {
+.check:focus + .editions__checkbox {
     color: #C283F3;
+    transition: color .3s ease-in-out;
+}
+
+.check:focus + .editions__checkbox::before {
     border-color: #C283F3;
-    transition: color border-color .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
 }
 
 /* Editions-slide */
@@ -1752,7 +1756,6 @@ a {
     width: 124px;
     height: 32px;
     padding-bottom: 12px;
-    ;
     border: solid 2px #C283F3;
     border-radius: 100px;
     z-index: 10;
