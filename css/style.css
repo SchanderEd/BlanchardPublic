@@ -335,10 +335,12 @@ a {
         transform: scaleX(0) translateX(-50%);
         opacity: 0;
     }
+
     50% {
         transform: scaleX(1) translateX(0%);
         opacity: 1;
     }
+
     100% {
         transform: scaleX(0) translateX(50%);
         opacity: 0;
@@ -1542,6 +1544,7 @@ a {
 
 .editions {
     min-height: 762px;
+    margin-bottom: 80px;
     padding-top: 27px;
     padding-bottom: 30px;
     background-image: url(../img/editions-bg.jpg);
@@ -1589,14 +1592,14 @@ a {
 .editions__right {
     display: flex;
     width: calc(100% - 400px);
-    padding-left: 45px;
+    padding-left: 4px;
     padding-right: 45px;
     flex-direction: column;
 }
 
 .swiper-container-editions {
     width: calc(100% - -130px);
-    padding-top: 147px;
+    padding-top: 130px;
 }
 
 .editions-slide {
@@ -1629,12 +1632,12 @@ a {
     border: 1px solid #CACACA;
 }
 
-.check + .editions__checkbox {
+.check+.editions__checkbox {
     position: relative;
     top: 4px;
 }
 
-.check + .editions__checkbox:before {
+.check+.editions__checkbox:before {
     position: absolute;
     top: 8px;
     right: 0;
@@ -1643,7 +1646,7 @@ a {
     transition: border-color .3s ease-in-out;
 }
 
-.check:checked + .editions__checkbox:before {
+.check:checked+.editions__checkbox:before {
     background-image: url(../img/checkbox.svg);
     background-repeat: no-repeat;
     background-position: 4px 4px;
@@ -1660,27 +1663,27 @@ a {
     transition: color .3s ease-in-out;
 }
 
-.check:checked +.editions__checkbox {
+.check:checked+.editions__checkbox {
     color: #C283F3;
 }
 
-.check:hover + .editions__checkbox {
+.check:hover+.editions__checkbox {
     color: #C283F3;
     transition: color .3s ease-in-out;
-  }
+}
 
-.check:hover +.editions__checkbox::before {
+.check:hover+.editions__checkbox::before {
     color: #C283F3;
     border-color: #C283F3;
     transition: border-color .3s ease-in-out;
 }
 
-.check:focus + .editions__checkbox {
+.check:focus+.editions__checkbox {
     color: #C283F3;
     transition: color .3s ease-in-out;
 }
 
-.check:focus + .editions__checkbox::before {
+.check:focus+.editions__checkbox::before {
     border-color: #C283F3;
     transition: border-color .3s ease-in-out;
 }
@@ -1755,7 +1758,7 @@ a {
 }
 
 .editions__filter-input-first {
-   margin-right: 39px;
+    margin-right: 39px;
 }
 
 .editions__input-currency {
@@ -1765,9 +1768,10 @@ a {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
+
 /*
 .editions__filter-input-second {
     border-radius: 0px 6px 6px 0px;
@@ -1851,17 +1855,17 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .pagination-editions {
     top: 90px;
-    left: -550px;
+    left: -529px;
 }
 
 .editions-swiper-button-prev {
     top: 100px;
-    left: -50px;
+    left: -9px;
 }
 
 .editions-swiper-button-next {
     top: 100px;
-    left: -50px;
+    left: -9px;
 }
 
 /* Projects */
@@ -1871,7 +1875,38 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .projects__heading {
+    margin-bottom: 17px;
     color: var(--color-text-black);
+}
+
+.projects__content {
+    margin: 0;
+    margin-bottom: 20px;
+    max-width: 1040px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.projects__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #9D5CD0;
+    outline: none;
+    transition: color .3s ease-in-out;
+}
+
+.projects__link:focus {
+    color: #fff;
+    transition: color .3s ease-in-out;
+}
+
+.projects__subtitle {
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
 }
 
 .marker {
@@ -1879,5 +1914,137 @@ input[type="number"]::-webkit-inner-spin-button {
     position: relative;
     width: 16px;
     height: 16px;
-    background-image: url(../img/tooltip.svg);
+    cursor: pointer;
+    outline: none;
+}
+
+.toolip-svg {
+    fill: #9D5CD0;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    transition: fill .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
+}
+
+.toolip-svg:hover {
+    fill: #D1A9F0;
+    border-color: #9D5CD0;
+    transition: fill .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
+}
+
+.toolip-svg:active {
+    fill: #9D5CD0;
+    border-color: transparent;
+    transition: fill .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
+}
+
+.popup {
+    position: absolute;
+    height: auto;
+    min-height: 29px;
+    max-width: 264px;
+    width: max-content;
+    left: 50%;
+    top: -30px;
+    transform: translate(-50%, -50%);
+    padding: 10px 11px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #FFFFFF;
+    background-color: #9D5CD0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.popup2 {
+    top: -35px;
+}
+
+.popup3 {
+    top: -21px;
+}
+
+.popup::after {
+    content: '';
+    position: absolute;
+    /* Абсолютное позиционирование */
+    left: 47.5%;
+    bottom: -12px;
+    /* Положение треугольника */
+    border: 6px solid transparent;
+    /* Прозрачные границы */
+    border-top: 6px solid #9D5CD0;
+    ;
+    /* Добавляем треугольник */
+}
+
+.marker:hover .popup {
+    opacity: 1;
+}
+
+.marker:focus .popup {
+    opacity: 1;
+}
+
+.marker:focus .toolip-svg {
+    fill: #D1A9F0;
+    border-color: #9D5CD0;
+    transition: fill .3s ease-in-out;
+    transition: border-color .3s ease-in-out;
+}
+
+.projects__swiper {
+    position: relative;
+    margin: 0;
+    padding-left: 75px;
+    width: calc(100% - -4px);
+}
+
+.projects__slide {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 76px;
+}
+
+.projects-swiper-button-prev {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.projects-swiper-button-next {
+    position: absolute;
+    top: 60px;
+    left: 1570px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.projects-btn-ui {
+    height: 34px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    fill: #ECECEC;
+    transition: fill .3s ease-in-out;
+    outline: none;
+}
+
+.projects-btn-ui:hover {
+    fill: #D1A9F0;
+    transition: fill .3s ease-in-out;
+}
+
+.projects-btn-ui:active {
+    border-color: #D1A9F0;
+}
+
+.projects-btn-ui:focus {
+    border-color: #D1A9F0;
+    transition: border-color .3s ease-in-out;
 }
