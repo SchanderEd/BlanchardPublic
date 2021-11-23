@@ -1412,7 +1412,7 @@ a {
     content: '';
     width: 20px;
     height: 12px;
-    background-image: url(../img/Rectangle\ 66.svg);
+    background-image: url(../img/accordion-decr.svg);
     background-repeat: no-repeat;
     transition: .3s ease-in-out;
 }
