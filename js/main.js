@@ -42,20 +42,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiperEditions = new Swiper('.swiper-container-editions', {
         loop: true,
 
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 50,
+        loopFillGroupWithBlank: true,
+
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
         },
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.editions-swiper-button-next',
+            prevEl: '.editions-swiper-button-prev',
         },
 
     })
 
     const swiperProjects = new Swiper('.projects__swiper', {
         loop: true,
+
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        
+        loopFillGroupWithBlank: true,
 
         pagination: {
             el: '.swiper-pagination',
@@ -102,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ),
 
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-                hintContent: 'Собственный значок метки',
+                hintContent: 'Леонтьевский переулок, дом 5/1',
                 balloonContent: 'Это красивая метка'
             }, {
                 // Опции.
