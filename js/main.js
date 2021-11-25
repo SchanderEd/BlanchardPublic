@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         slidesPerView: 3,
         slidesPerGroup: 3,
-        
+        spaceBetween: 0,
+
         loopFillGroupWithBlank: true,
 
         pagination: {
@@ -149,14 +150,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             },
 
-            messages: {
-                name: {
-                    required: 'Недопустимый формат'
-                },
+        },
 
-                tel: {
-                    required: 'Недопустимый формат'
-                }
+        messages: { 
+            name: {
+                required: 'Недопустимый формат'
+            },
+
+            tel: {
+                required: 'Недопустимый формат'
             },
         }
     });
@@ -166,5 +168,5 @@ document.addEventListener('DOMContentLoaded', function () {
     $(function () {
         $("#accordion").accordion();
         $("#accordionEmpty").accordion();
-      });
+    });
 });
