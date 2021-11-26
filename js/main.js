@@ -27,6 +27,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiperGallery = new Swiper('.swiper-container-gallery', {
         loop: false,
 
+        autoHeight: false,
+
+        spaceBetween: 25,
+
+         breakpoints: {
+
+            1920: {
+                slidesPerColumn: 2,
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+                spaceBetween: 50,
+        
+                grid : {
+                    rows: 2,
+                 },
+            },
+
+            1024: {
+                slidesPerView: 2,
+                slidesPerGroup: 4,
+                slidesPerColumn: 2,
+
+                grid : {
+                    rows: 2,
+                 },
+        
+            }
+        },
+
         pagination: {
             el: '.swiper-pagination',
             type: 'fraction',
@@ -42,8 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiperEditions = new Swiper('.swiper-container-editions', {
         loop: true,
 
-        slidesPerView: 3,
-        slidesPerGroup: 3,
         spaceBetween: 50,
         loopFillGroupWithBlank: true,
 
@@ -55,6 +82,19 @@ document.addEventListener('DOMContentLoaded', function () {
         navigation: {
             nextEl: '.editions-swiper-button-next',
             prevEl: '.editions-swiper-button-prev',
+        },
+
+        breakpoints: {
+
+            1920: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+
+            1024: {
+                slidesPerView: 2,
+                slidesPerGroup: 4
+            }
         },
 
     })
@@ -77,6 +117,15 @@ document.addEventListener('DOMContentLoaded', function () {
             nextEl: '.projects-swiper-button-next',
             prevEl: '.projects-swiper-button-prev',
         },
+
+        
+        breakpoints: {
+
+            1024: {
+                slidesPerView: 2,
+                slidesPerGroup: 5
+            }
+        }
 
     })
 
@@ -166,7 +215,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Accordion 
 
     $(function () {
-        $("#accordion").accordion();
-        $("#accordionEmpty").accordion();
+        $("#accordion").accordion({
+            heightStyle: "content"
+          });
+        $("#accordionEmpty").accordion({
+            heightStyle: "content"
+          });
     });
 });

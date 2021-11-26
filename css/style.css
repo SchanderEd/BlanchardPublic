@@ -159,6 +159,27 @@ a {
     min-height: 100px;
 }
 
+/* Burger */
+
+.burger__btn {
+    display: none;
+}
+
+.burger__menu {
+    display: none;
+}
+
+.burger-active {
+    transform: scale(-1, 1);
+}
+
+.burger .open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* Burger end */
+
 .logo {
     padding-top: 2px;
     margin-right: auto;
@@ -205,6 +226,11 @@ a {
 
 .enter-link:active .enter-link__svg {
     fill: #9D5CD0;
+    transition: .3s ease-in-out;
+}
+
+.burger__link:hover .enter-link__svg {
+    fill: #C283F3;
     transition: .3s ease-in-out;
 }
 
@@ -683,20 +709,23 @@ a {
 
 .slide-one {
     background: url(../img/background-main.jpg);
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slide-two {
     background: url(../img/background-main2.jpg);
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slide-three {
     background: url(../img/background-main3.jpg);
-    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* About Us */
@@ -747,9 +776,17 @@ a {
     font-weight: 600;
 }
 
+.gallery__left-inner {
+    display: flex;
+    flex-direction: column;
+    height: 92%;
+    justify-content: space-between;
+}
+
 .gallery__remark {
-    width: 377px;
+    width: 100%;
     padding: 0;
+    padding-bottom: 70px;
     margin: 0;
     font-size: 16px;
     font-weight: 600;
@@ -779,11 +816,14 @@ a {
     color: #7943A4;
 }
 
+.gallery__left {
+    width: 100%;
+}
+
 /* Select */
 
 .choices {
-    width: 400px;
-    margin-bottom: 553px;
+    max-width: 400px;
 }
 
 .choices__item {
@@ -812,12 +852,12 @@ a {
 }
 
 .choices__list--dropdown
-/* Выпадающий лист */
 
+/* Выпадающий лист */
     {
     position: absolute;
     height: 90px;
-    width: 400px;
+    max-width: 400px;
     color: #999999;
     background-color: inherit;
 }
@@ -919,26 +959,36 @@ a {
 /* Gallery right */
 
 .gallery__right {
-    width: calc(100% - 400px);
+    width: calc(100% - 365px);
     padding-top: 27px;
+}
+
+.swiper-container-gallery {
+    position: relative;
+    max-width: 1200px;
+    height: 835px;
+    padding-right: 50px;
 }
 
 .swiper-wrapper-gallery {
     padding-top: 45px;
+    padding-left: 47px;
 }
 
 .gallery-slide {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 24px;
+    height: auto;
     padding-right: 0px;
-    width: auto;
+    overflow: hidden;
+}
+
+.gallery-slide__img {
+    width: 100%;
+    height: 100%;
 }
 
 .gallery-slide__btn {
     position: relative;
-    height: 355px;
+    height: auto;
     border: 3px solid transparent;
     transition: .3s ease-in-out;
     padding: 0px;
@@ -973,10 +1023,6 @@ a {
     width: 350px;
     height: 350px;
     background-color: #C283F366;
-}
-
-.gallery-slide__item:nth-child(-n+3) {
-    margin-bottom: 41px;
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
@@ -1033,13 +1079,14 @@ a {
 
 .swiper-pagination {
     height: 30px;
-    top: 9px;
+    top: 12px;
     font-size: 16px;
     font-weight: 400;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     left: -483px;
+    left: -40%;
 }
 
 /* Catalog */
@@ -1139,12 +1186,16 @@ a {
 
 .catalog__bottom--active {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .catalog__img-artist {
+    width: 100%;
     margin-bottom: 30px;
     max-height: 470px;
+}
+
+.catalog__img-artist-empty {
+    width: 100%;
 }
 
 .catalog__heading-artist {
@@ -1161,6 +1212,7 @@ a {
 
 .about-artist-content--active {
     display: block;
+    width: 91%;
     padding-top: 22px;
 }
 
@@ -1181,16 +1233,6 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-}
-
-.catalog__about-artist-empty-img-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-width: 750px;
-    min-height: 470px;
-    background-color: #ECECEC;
 }
 
 .catalog__heading-artist-empty {
@@ -1230,20 +1272,22 @@ a {
 }
 
 .catalog__accordeon {
+    width: 100%;
     padding: 0px;
     padding-top: 23px;
     padding-left: 50px;
 }
 
 .ui-accordion .ui-accordion-content {
-    width: 670px;
+    width: 100%;
+    min-width: 437px;
     padding: 0;
     padding-top: 33px;
     overflow: hidden;
 }
 
 .catalog__accordeon-item {
-    width: 800px;
+    max-width: 800px;
     padding: 0px;
     line-height: 32px;
 }
@@ -1259,20 +1303,8 @@ a {
     height: 312px;
 }
 
-.catalog__accordion-empty-block {
-    position: relative;
-    width: 275px;
-    height: 189px;
-    padding: 10px;
-    border: 2px solid #B7B7B7;
-}
-
-.catalog__accordion-empty-block::after {
-    position: absolute;
-    content: '';
-    width: 251px;
-    height: 165px;
-    background: #B7B7B7;
+.catalog__artist-empty-list {
+    width: 100%;
 }
 
 .catalog__accrodion-empty-heading {
@@ -1284,7 +1316,7 @@ a {
 .catalog__accordion-empty-text {
     margin: 0;
     padding: 0;
-    width: 266px;
+    max-width: 266px;
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -1355,7 +1387,7 @@ a {
     position: relative;
     width: 670px;
     height: auto;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -1363,8 +1395,18 @@ a {
 }
 
 .catalog__accordeon-list-artist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 290px;
     margin: 0;
     padding: 0;
+}
+
+.catalog__accordion-item {
+    margin-right: 62px;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -1456,18 +1498,23 @@ a {
 
 .events__list {
     display: flex;
-    flex-wrap: wrap;
-    min-width: 1600px;
+    max-width: 1600px;
     margin: 0;
     padding: 0;
     padding-top: 14px;
+}
+
+.events__hidden-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .events__item {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 500px;
     min-height: 700px;
     margin-right: 50px;
     margin-bottom: 50px;
@@ -1482,6 +1529,7 @@ a {
 }
 
 .events__img {
+    width: 100%;
     margin-bottom: 11px;
 }
 
@@ -1501,7 +1549,7 @@ a {
 }
 
 .events__item-heading {
-    width: 451px;
+    max-width: 451px;
     margin: 0;
     padding: 0;
     padding-left: 50px;
@@ -1511,7 +1559,7 @@ a {
 }
 
 .events__content {
-    width: 450px;
+    max-width: 450px;
     margin: 0;
     padding: 0;
     padding-left: 50px;
@@ -2091,8 +2139,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .projects-swiper-button-next {
     position: absolute;
-    top: 58px;
-    left: 1568px;
+    top: 61px;
+    left: 98%;
     z-index: 1;
     cursor: pointer;
 }
@@ -2267,7 +2315,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .contacts__btn:focus:after {
     opacity: 1;
     transition: opacity .3s ease-in-out;
-} 
+}
 
 .contacts__social-heading {
     margin: 0;
@@ -2412,4 +2460,91 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .footer__social-link:active .footer__social-svg {
     fill: #9D5CD0;
+}
+
+/* Width 1024px */
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 955px;
+    }
+
+    .burger__btn {
+        display: block;
+    }
+
+    .burger__menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 10;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        width: 25%;
+        height: fit-content;
+        padding: 15px;
+        background-color: #000000;
+        transition: transform .3s ease-in-out;
+        transform: translateX(-101%);
+    }
+
+    .burger__item {
+        margin-bottom: 20px;
+    }
+
+    .active-burger {
+        transform: translateX(0);
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .enter-link {
+        display: none;
+    }
+
+    .header__bottom {
+        display: none;
+    }
+
+    .catalog__accordeon {
+        max-width: 495px;
+    }
+
+    .catalog__accordeon-list-artist {
+        height: 395px;
+    }
+
+    .swiper-container-gallery {
+        padding-right: 0;
+    }
+
+    .swiper-wrapper-gallery {
+        padding-left: 0;
+    }
+
+    .choices {
+        max-width: 280px;
+    }
+
+    .gallery {
+        min-height: 839px;
+    }
+
+    .gallery__remark {
+        max-width: 284px;
+    }
+
+    .gallery__left-inner {
+        height: 84%;
+    }
+
+    .gallery__right {
+        width: calc(110% - 365px);
+    }
+
+
+
 }
