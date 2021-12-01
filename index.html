@@ -32,7 +32,7 @@
       <div class="header__top">
         <div class="container container-top">
           <div class="burger">
-            <button class="burger__btn reset-btn">
+            <button class="burger__btn reset-btn" id="burgerBtn">
               <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.700012)" fill="white" />
                 <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
@@ -49,14 +49,18 @@
               <li class="burger__item"><a href="" class="burger__link btn-hover btn-focus">Издания</a></li>
               <li class="burger__item"><a href="" class="burger__link btn-hover btn-focus">Проекты</a></li>
               <li class="burger__item"><a href="" class="burger__link btn-hover btn-focus">Контакты</a></li>
-              <li class="burger__item"><a href="" class="burger__link btn-hover btn-focus"><svg class="enter-link__svg" width="13"
-                height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
-              </svg>Войти</a></li>
+              <li class="burger__item"><a href="" class="burger__link btn-hover btn-focus"><svg class="enter-link__svg"
+                    width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
+                  </svg>Войти</a></li>
             </ul>
           </div>
           <a href="#" class="logo"><img src="img/logo.svg" alt="Blanchard" class="logo__img"></a>
+          <form action="#" class="header__search-mobile">
+            <button class="header__search-btn search-btn-mobile reset-btn" aria-label="Поиск по сайту"></button>
+            <input type="search" placeholder="Поиск по сайту" class="header__search-input-mobile reset-input">
+          </form>
           <nav class="nav-menu">
             <ul class="nav-menu__list">
               <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">О нас</a>
@@ -1030,28 +1034,27 @@
                 </ul>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination pagination-editions"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev editions-swiper-button-prev"><svg class="slide-arrow" width="30"
-                    height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
-                    aria-label="Издания предыдущая страница">
-                    <path
-                      d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
-                    <path
-                      d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
-                    <path d="M16 20L11 15L16 10" stroke="white" />
-                  </svg>
-                </div>
-                <div class="swiper-button-next editions-swiper-button-next"><svg class="slide-arrow" width="30"
-                    height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
-                    aria-label="Издания следующая страница">
-                    <path
-                      d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" />
-                    <path
-                      d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" />
-                    <path d="M14 20L19 15L14 10" stroke="white" />
-                  </svg>
-                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev editions-swiper-button-prev"><svg class="slide-arrow" width="30"
+                  height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Издания предыдущая страница">
+                  <path
+                    d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
+                  <path
+                    d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
+                  <path d="M16 20L11 15L16 10" stroke="white" />
+                </svg>
+              </div>
+              <div class="swiper-button-next editions-swiper-button-next"><svg class="slide-arrow" width="30"
+                  height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Издания следующая страница">
+                  <path
+                    d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" />
+                  <path
+                    d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" />
+                  <path d="M14 20L19 15L14 10" stroke="white" />
+                </svg>
               </div>
             </div>
           </div>
@@ -1181,10 +1184,9 @@
                 <button class="contacts__btn" aria-label="Заказать обратный звонок">Заказать</button>
               </form>
               <div class="contacts__social">
-                <h4 class="contacts__social-heading">Связаться в один клик</h4>
-                <div class="contacts__social-wrapper">
+                <h3 class="contacts__social-heading">Связаться в один клик</h3>
                   <ul class="contacts__social-list">
-                    <li class="contacts__social__item"> <a href="" class="contacts__social-link"
+                    <li class="contacts__social__item"> <a href="#" class="contacts__social-link"
                         aria-label="Ссылка на whatsapp"><svg class="whatsapp-svg" width="40" height="40"
                           viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -1193,7 +1195,7 @@
                             d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87489 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z"
                             fill="white" />
                         </svg></a></li>
-                    <li class="contacts__social__item"> <a href="" class="contacts__social-link"
+                    <li class="contacts__social__item"> <a href="#" class="contacts__social-link"
                         aria-label="Ссылка на telegram"><svg class="tg-svg" width="40" height="40" viewBox="0 0 40 40"
                           fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -1209,7 +1211,6 @@
                           </defs>
                         </svg></a></li>
                   </ul>
-                </div>
               </div>
             </div>
           </div>
@@ -1259,6 +1260,7 @@
 
     <!-- Scripts -->
 
+    <script src="js/mobile-search.js"></script>
     <script src="js/bottom-list__item-click.js"></script>
     <script src="js/choices.min.js"></script>
     <script src="js/tabs.js"></script>
