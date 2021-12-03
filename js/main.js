@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
             1024: {
                 spaceBetween: 10,
                 slidesPerView: 2,
-                slidesPerGroup: 5
+                slidesPerGroup: 2
             }
         }
 

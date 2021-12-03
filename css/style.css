@@ -2491,6 +2491,10 @@ input[type="number"]::-webkit-inner-spin-button {
     padding-top: 6px;
   }
 
+  .logo__img {
+    width: 188px;
+  }
+
   .header__search-mobile {
     position: relative;
     display: block;
@@ -2624,8 +2628,17 @@ input[type="number"]::-webkit-inner-spin-button {
     padding: 15px 10px;
   }
 
+  .logo__img {
+    width: 100%;
+  }
+
   .catalog__accordeon {
     max-width: 495px;
+  }
+
+  .ui-icon {
+    width: 50px;
+    padding-top: 5px;
   }
 
   .swiper-container-gallery {
