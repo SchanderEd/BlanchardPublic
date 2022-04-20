@@ -26,33 +26,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const swiperGallery = new Swiper('.swiper-container-gallery', {
         loop: false,
+        slidesPerGroup: 3,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+        },
 
         autoHeight: false,
 
         spaceBetween: 25,
 
-         breakpoints: {
+        breakpoints: {
 
-            1920: {
-                slidesPerColumn: 2,
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: 50,
-        
-                grid : {
-                    rows: 2,
-                 },
+            320: {
+                slidesPerView: 1,
+                grid: {
+                    rows: 1
+                },
+                spaceBetween: 0
+            },
+            576: {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2
+                },
+                spaceBetween: 70
             },
 
-            1024: {
-                slidesPerView: 2,
-                slidesPerGroup: 4,
-                slidesPerColumn: 2,
-
-                grid : {
-                    rows: 2,
-                 },
-        
+            1314: {
+                slidesPerView: 3,
+                grid: {
+                    rows: 2
+                },
+                spaceBetween: 50
             }
         },
 
@@ -70,6 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const swiperEditions = new Swiper('.swiper-container-editions', {
         loop: true,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: true,
+            pageUpDown: true,
+        },
 
         spaceBetween: 50,
         loopFillGroupWithBlank: true,
@@ -91,10 +103,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 slidesPerGroup: 3,
             },
 
+            1400: {
+                spaceBetween: 30,
+                slidesPerView: 3,
+                slidesPerGroup: 3
+            },
+
             1024: {
                 spaceBetween: 30,
                 slidesPerView: 2,
                 slidesPerGroup: 2
+            },
+
+            576: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 10
             }
         },
 
@@ -119,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
             prevEl: '.projects-swiper-button-prev',
         },
 
-        
+
         breakpoints: {
 
             1920: {
@@ -128,14 +152,33 @@ document.addEventListener('DOMContentLoaded', function () {
                 spaceBetween: 0,
             },
 
-            1024: {
-                spaceBetween: 10,
+            320: {
+                spaceBetween: 50,
                 slidesPerView: 2,
                 slidesPerGroup: 2
             }
         }
 
     })
+
+    const swiperEvents = new Swiper('.swiper-events', {
+        // Optional parameters
+
+        loop: false,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 50,
+
+        // And if we need scrollbar
+        pagination: {
+            el: '.swiper-pagination',
+          },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+
+    });
 
     // Select Custom
 
@@ -209,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         },
 
-        messages: { 
+        messages: {
             name: {
                 required: 'Недопустимый формат'
             },
@@ -225,9 +268,9 @@ document.addEventListener('DOMContentLoaded', function () {
     $(function () {
         $("#accordion").accordion({
             heightStyle: "content"
-          });
+        });
         $("#accordionEmpty").accordion({
             heightStyle: "content"
-          });
+        });
     });
 });
