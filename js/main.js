@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
-        loop: true,
+        loop: false,
+        
 
         // If we need pagination
         pagination: {
@@ -16,9 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             hide: true,
         },
 
-        autoplay: {
-            delay: 4000,
-        },
+
 
         speed: 1000,
 
@@ -27,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiperGallery = new Swiper('.swiper-container-gallery', {
         loop: false,
         slidesPerGroup: 3,
+        slidesPerView: 3,
         keyboard: {
             enabled: true,
             onlyInViewport: true,
@@ -39,29 +39,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
         breakpoints: {
 
-            320: {
-                slidesPerView: 1,
-                grid: {
-                    rows: 1
-                },
-                spaceBetween: 0
-            },
-            576: {
-                slidesPerView: 2,
-                grid: {
-                    rows: 2
-                },
-                spaceBetween: 70
+            1920: {
+                slidesPerView: 3,
             },
 
-            1314: {
-                slidesPerView: 3,
-                grid: {
-                    rows: 2
-                },
-                spaceBetween: 50
+            1024: {
+                spaceBetween: 13,
+                slidesPerView: 2
+            },
+
+            768: {
+                spaceBetween: 38,
+                slidesPerView: 2
+            },
+
+            320: {
+                spaceBetween: 8,
+                slidesPerGroup: 1,
+                slidesPerView: 1
             }
         },
+
 
         pagination: {
             el: '.swiper-pagination',
@@ -74,55 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
     });
-
-    const swiperEditions = new Swiper('.swiper-container-editions', {
-        loop: true,
-        keyboard: {
-            enabled: true,
-            onlyInViewport: true,
-            pageUpDown: true,
-        },
-
-        spaceBetween: 50,
-        loopFillGroupWithBlank: true,
-
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-        },
-
-        navigation: {
-            nextEl: '.editions-swiper-button-next',
-            prevEl: '.editions-swiper-button-prev',
-        },
-
-        breakpoints: {
-
-            1920: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-            },
-
-            1400: {
-                spaceBetween: 30,
-                slidesPerView: 3,
-                slidesPerGroup: 3
-            },
-
-            1024: {
-                spaceBetween: 30,
-                slidesPerView: 2,
-                slidesPerGroup: 2
-            },
-
-            576: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 10
-            }
-        },
-
-    })
 
     const swiperProjects = new Swiper('.projects__swiper', {
         loop: true,
@@ -152,10 +101,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 spaceBetween: 0,
             },
 
-            320: {
+            768: {
                 spaceBetween: 50,
                 slidesPerView: 2,
-                slidesPerGroup: 2
+            },
+
+            320: {
+                spaceBetween: 50,
+                slidesPerView: 1,
+                slidesPerGroup: 9
             }
         }
 
@@ -165,13 +119,39 @@ document.addEventListener('DOMContentLoaded', function () {
         // Optional parameters
 
         loop: false,
-        slidesPerView: 1,
-        slidesPerGroup: 1,
         spaceBetween: 50,
+        slidesPerGroup: 2,
+        slidesPerView: 3,
+        navigation: {
+            nextEl: '.events__swiper-button-next',
+        },
+
+        breakpoints: {
+
+            1920: {
+                spaceBetween: 53,
+                slidesPerView: 3,
+            },
+
+            1024: {
+                spaceBetween: 27,
+            },
+
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 34,
+            },
+
+            320: {
+                spaceBetween: 38,
+                slidesPerGroup: 1,
+                slidesPerView: 1
+            }
+        },
 
         // And if we need scrollbar
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination-events',
           },
 
         scrollbar: {

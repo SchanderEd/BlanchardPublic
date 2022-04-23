@@ -79,8 +79,6 @@
               </li>
               <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">События</a>
               </li>
-              <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Издания</a>
-              </li>
               <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Проекты</a>
               </li>
               <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Контакты</a>
@@ -283,10 +281,21 @@
                   <option value="#" class="gallery__select-option">Скульптура</option>
                 </select>
               </div>
-              <p class="gallery__remark">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества
-                скачиваний
-                <a href="#" class="gallery__link btn-focus">авторизуйтесь,</a> либо воспользуйтесь лицензией.
-              </p>
+              <ul class="gallery__list">
+                <li class="gallery__item">
+                  <input type="checkbox" name="check" id="check0" class="check">
+                  <label for="check0" class="editions__checkbox" aria-label="19 век">XIX век</label>
+                </li>
+                <li class="gallery__item">
+                  <input type="checkbox" name="check" id="check1" class="check">
+                  <label for="check1" class="editions__checkbox" aria-label="20 век">XX век</label>
+                </li>
+                <li class="gallery__item">
+                  <input type="checkbox" name="check" id="check2" class="check">
+                  <label for="check2" class="editions__checkbox" aria-label="Современность">
+                    Современность</label>
+                </li>
+              </ul>
             </div>
             <div class="gallery__right">
               <div class="swiper swiper-container-gallery">
@@ -336,24 +345,6 @@
                   <li class="swiper-slide gallery-slide">
                     <div class="gallery-slide__item gallery-slide__item-one"><button
                         class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_1-4.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_1-5.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_1-6.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
                           src="img/gallery_2-1.jpg" alt="Картина"></button>
                     </div>
                   </li>
@@ -367,96 +358,6 @@
                     <div class="gallery-slide__item gallery-slide__item-one"><button
                         class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
                           src="img/gallery_2-3.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_2-4.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_2-5.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_2-6.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_3-1.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_3-2.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_3-3.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_3-4.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_3-5.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_3-6.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_4-1.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_4-2.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_4-3.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_4-4.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_4-5.jpg" alt="Картина"></button>
-                    </div>
-                  </li>
-                  <li class="swiper-slide gallery-slide">
-                    <div class="gallery-slide__item gallery-slide__item-one"><button
-                        class="gallery-slide__btn reset-btn" aria-label="Картина"><img class="gallery-slide__img"
-                          src="img/gallery_4-6.jpg" alt="Картина"></button>
                     </div>
                   </li>
                 </ul>
@@ -831,320 +732,70 @@
       <section class="events">
         <div class="container event-container">
           <h2 class="events__heading heading-section">События</h2>
-          <ul class="events__list animate">
-            <li class="events__item">
-              <img src="img/events-1.jpg" alt="" class="events__img">
-              <p class="events__subtitle subtitle-style">Музей им. Щусева</p>
-              <p class="events__subtitle-date subtitle-style">с 20 марта по 30 апреля</p>
-              <h3 class="events__item-heading">Книжная гравюра в живом восприятии</h3>
-              <p class="events__content">Один из ведущих флорентийских художников Кватроченто, основатель художественной
-                династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-              <a href="#" class="events__link">Подробнее</a>
-            </li>
-            <li class="events__item">
-              <img src="img/events-2.jpg" alt="" class="events__img">
-              <p class="events__subtitle subtitle-style">ММОМА</p>
-              <p class="events__subtitle-date subtitle-style">24 марта 19:00</p>
-              <h3 class="events__item-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-              <p class="events__content">Высокий уровень вовлечения представителей целевой аудитории является четким
-                доказательством простого факта.</p>
-              <a href="#" class="events__link">Подробнее</a>
-            </li>
-            <li class="events__item">
-              <img src="img/events-3.jpg" alt="" class="events__img">
-              <p class="events__subtitle subtitle-style">Еврейский музей</p>
-              <p class="events__subtitle-date subtitle-style">с 31 марта по 21 апреля</p>
-              <h3 class="events__item-heading">Выставка «Формация 2020»</h3>
-              <p class="events__content">Идейные соображения высшего порядка, а также современная методология разработки
-                играет важную роль в формировании глубокомысленных рассуждений.</p>
-              <a href="#" class="events__link">Подробнее</a>
-            </li>
-          </ul>
-          <ul class="events__hidden-list animate">
-            <li class="events__item-second events__item-hidden hidden animate__animated animate__fadeIn">
-              <img src="img/events-4.jpg" alt="" class="events__img">
-              <p class="events__subtitle subtitle-style">Третьяковка на Крымском валу</p>
-              <p class="events__subtitle-date subtitle-style">с 30 марта по 30 апреля</p>
-              <h3 class="events__item-heading">XXIV Международная биеннале молодого искусства</h3>
-              <p class="events__content">Внезапно, реплицированные с зарубежных источников, современные исследования.
-              </p>
-              <a href="#" class="events__link">Подробнее</a>
-            </li>
-            <li class="events__item-second events__item-hidden hidden animate__animated animate__fadeIn">
-              <img src="img/events-5.jpg" alt="" class="events__img">
-              <p class="events__subtitle subtitle-style">ММАМ</p>
-              <p class="events__subtitle-date subtitle-style">с 8 апреля по 20 мая</p>
-              <h3 class="events__item-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-              <p class="events__content">Один из ведущих флорентийских художников Кватроченто, основатель художественной
-                династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-              <a href="#" class="events__link">Подробнее</a>
-            </li>
-            <li
-              class="events__item-second events__item-second-768-disabled events__item-hidden hidden animate__animated animate__fadeIn">
-              <img src="img/events-3.jpg" alt="" class="events__img">
-              <p class="events__subtitle subtitle-style">Еврейский музей</p>
-              <p class="events__subtitle-date subtitle-style">с 31 марта по 21 апреля</p>
-              <h3 class="events__item-heading">Выставка «Формация 2020»</h3>
-              <p class="events__content">Идейные соображения высшего порядка, а также современная методология разработки
-                играет важную роль в формировании глубокомысленных рассуждений.</p>
-              <a href="#" class="events__link">Подробнее</a>
-            </li>
-          </ul>
 
           <!--Events slider-->
 
           <div class="swiper swiper-events">
             <!-- Additional required wrapper -->
-              <ul class="events__list-slider swiper-wrapper swiper-wrapper-events">
-                <!-- Slides -->
-                <li class="swiper-slide swiper-slide-events events__item">
-                  <img src="img/events-1.jpg" alt="" class="events__img">
-                  <p class="events__subtitle subtitle-style">Музей им. Щусева</p>
-                  <p class="events__subtitle-date subtitle-style">с 20 марта по 30 апреля</p>
-                  <h3 class="events__item-heading">Книжная гравюра в живом восприятии</h3>
-                  <p class="events__content">Один из ведущих флорентийских художников Кватроченто, основатель
-                    художественной
-                    династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                  <a href="#" class="events__link">Подробнее</a>
-                </li>
-                <li class="swiper-slide swiper-slide-events events__item">
-                  <img src="img/events-2.jpg" alt="" class="events__img">
-                  <p class="events__subtitle subtitle-style">ММОМА</p>
-                  <p class="events__subtitle-date subtitle-style">24 марта 19:00</p>
-                  <h3 class="events__item-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-                  <p class="events__content">Высокий уровень вовлечения представителей целевой аудитории является четким
-                    доказательством простого факта.</p>
-                  <a href="#" class="events__link">Подробнее</a>
-                </li>
-                <li class="swiper-slide swiper-slide-events events__item events__item">
-                  <img src="img/events-3.jpg" alt="" class="events__img">
-                  <p class="events__subtitle subtitle-style">Еврейский музей</p>
-                  <p class="events__subtitle-date subtitle-style">с 31 марта по 21 апреля</p>
-                  <h3 class="events__item-heading">Выставка «Формация 2020»</h3>
-                  <p class="events__content">Идейные соображения высшего порядка, а также современная методология
-                    разработки
-                    играет важную роль в формировании глубокомысленных рассуждений.</p>
-                  <a href="#" class="events__link">Подробнее</a>
-                </li>
-                <li class="swiper-slide swiper-slide-events events__item"><img src="img/events-4.jpg" alt=""
-                    class="events__img">
-                  <p class="events__subtitle subtitle-style">Третьяковка на Крымском валу</p>
-                  <p class="events__subtitle-date subtitle-style">с 30 марта по 30 апреля</p>
-                  <h3 class="events__item-heading">XXIV Международная биеннале молодого искусства</h3>
-                  <p class="events__content">Внезапно, реплицированные с зарубежных источников, современные
-                    исследования.
-                  </p>
-                  <a href="#" class="events__link">Подробнее</a>
-                </li>
-                <li class="swiper-slide swiper-slide-events events__item"><img src="img/events-5.jpg" alt=""
-                    class="events__img">
-                  <p class="events__subtitle subtitle-style">ММАМ</p>
-                  <p class="events__subtitle-date subtitle-style">с 8 апреля по 20 мая</p>
-                  <h3 class="events__item-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-                  <p class="events__content">Один из ведущих флорентийских художников Кватроченто, основатель
-                    художественной
-                    династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-                  <a href="#" class="events__link">Подробнее</a>
-                </li>
-              </ul>
+            <ul class="events__list-slider swiper-wrapper swiper-wrapper-events">
+              <!-- Slides -->
+              <li class="swiper-slide swiper-slide-events events__item">
+                <img src="img/events-1.jpg" alt="" class="events__img">
+                <p class="events__subtitle subtitle-style">Музей им. Щусева</p>
+                <p class="events__subtitle-date subtitle-style">с 20 марта по 30 апреля</p>
+                <h3 class="events__item-heading">Книжная гравюра в живом восприятии</h3>
+                <p class="events__content">Один из ведущих флорентийских художников Кватроченто, основатель
+                  художественной
+                  династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a href="#" class="events__link">Подробнее</a>
+              </li>
+              <li class="swiper-slide swiper-slide-events events__item">
+                <img src="img/events-2.jpg" alt="" class="events__img">
+                <p class="events__subtitle subtitle-style">ММОМА</p>
+                <p class="events__subtitle-date subtitle-style">24 марта 19:00</p>
+                <h3 class="events__item-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <p class="events__content">Высокий уровень вовлечения представителей целевой аудитории является четким
+                  доказательством простого факта.</p>
+                <a href="#" class="events__link">Подробнее</a>
+              </li>
+              <li class="swiper-slide swiper-slide-events events__item events__item">
+                <img src="img/events-3.jpg" alt="" class="events__img">
+                <p class="events__subtitle subtitle-style">Еврейский музей</p>
+                <p class="events__subtitle-date subtitle-style">с 31 марта по 21 апреля</p>
+                <h3 class="events__item-heading">Выставка «Формация 2020»</h3>
+                <p class="events__content">Идейные соображения высшего порядка, а также современная методология
+                  разработки
+                  играет важную роль в формировании глубокомысленных рассуждений.</p>
+                <a href="#" class="events__link">Подробнее</a>
+              </li>
+              <li class="swiper-slide swiper-slide-events events__item"><img src="img/events-4.jpg" alt=""
+                  class="events__img">
+                <p class="events__subtitle subtitle-style">Третьяковка на Крымском валу</p>
+                <p class="events__subtitle-date subtitle-style">с 30 марта по 30 апреля</p>
+                <h3 class="events__item-heading">XXIV Международная биеннале молодого искусства</h3>
+                <p class="events__content">Внезапно, реплицированные с зарубежных источников, современные
+                  исследования.
+                </p>
+                <a href="#" class="events__link">Подробнее</a>
+              </li>
+              <li class="swiper-slide swiper-slide-events events__item"><img src="img/events-5.jpg" alt=""
+                  class="events__img">
+                <p class="events__subtitle subtitle-style">ММАМ</p>
+                <p class="events__subtitle-date subtitle-style">с 8 апреля по 20 мая</p>
+                <h3 class="events__item-heading">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <p class="events__content">Один из ведущих флорентийских художников Кватроченто, основатель
+                  художественной
+                  династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+                <a href="#" class="events__link">Подробнее</a>
+              </li>
+            </ul>
             <div class="swiper-pagination swiper-pagination-events"></div>
+            <div class="events__swiper-button-next"><svg class="evenst__arrow-btn" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" />
+              <path d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" />
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black"/>
+              </svg>
           </div>
-
-          <div class="events__bottom">
-            <button class="events__btn reset-btn btn-focus" tabindex="0">Все события</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- Editions -->
-
-      <section class="editions">
-        <div class="container">
-          <div class="editions__flexbox">
-            <div class="editions__left">
-              <h2 class="editions__heading-section heading-section">Издания</h2>
-              <h3 class="editions__heading">Категории</h3>
-              <ul class="editions__list">
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check0" class="check">
-                  <label for="check0" class="editions__checkbox" aria-label="Бестселлеры">Бестселлеры</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check1" class="check">
-                  <label for="check1" class="editions__checkbox" aria-label="Искусство">Искусство</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check2" class="check">
-                  <label for="check2" class="editions__checkbox" aria-label="Архитектура">
-                    Архитектура</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check3" class="check">
-                  <label for="check3" class="editions__checkbox" aria-label="Дизайн">Дизайн</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check4" class="check">
-                  <label for="check4" class="editions__checkbox" aria-label="Мода">Мода</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check5" class="check">
-                  <label for="check5" class="editions__checkbox" aria-label="Детям">Детям</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check6" class="check">
-                  <label for="check6" class="editions__checkbox" aria-label="Художественная литература">Художественная
-                    литература</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check7" class="check">
-                  <label for="check7" class="editions__checkbox" aria-label="Публицистика">Публицистика</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check8" class="check">
-                  <label for="check8" class="editions__checkbox" aria-label="Путеводители">Путеводители</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check9" class="check">
-                  <label for="check9" class="editions__checkbox" aria-label="Философия">Философия</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check10" class="check">
-                  <label for="check10" class="editions__checkbox" aria-label="Учебная литература">Учебная
-                    литература</label>
-                </li>
-                <li class="editions__item">
-                  <input type="checkbox" name="check" id="check11" class="check">
-                  <label for="check11" class="editions__checkbox" aria-label="Журналы и газеты">Журналы и газеты</label>
-                </li>
-              </ul>
-              <h3 class="editions__price-heading">Цена</h3>
-              <div class="editions__filter">
-                <label for="placeholderFirst"
-                  class="editions__input-placeholder editions__input-placeholder-first">От</label>
-                <input type="number" class="editions__filter-input editions__filter-input-first" id="placeholderFirst"
-                  aria-label="Укажите минимальную цену">
-                <input type="number" class="editions__filter-input editions__filter-input-second" id="placeholderSecond"
-                  aria-label="Укажите максимальную цену">
-                <label for="placeholderSecond"
-                  class="editions__input-placeholder editions__input-placeholder-second">до</label>
-                <label class="editions__input-currency">руб.</label>
-              </div>
-            </div>
-            <div class="editions__right">
-              <!-- Slider main container -->
-              <div class="swiper swiper-container-editions">
-                <!-- If we need pagination -->
-                <div class="editions__swiper-pagination-block">
-                  <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev editions-swiper-button-prev"><svg class="slide-arrow" width="30"
-                      height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
-                      aria-label="Издания предыдущая страница">
-                      <path
-                        d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
-                      <path
-                        d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" />
-                      <path d="M16 20L11 15L16 10" stroke="white" />
-                    </svg>
-                  </div>
-                  <div class="swiper-button-next editions-swiper-button-next"><svg class="slide-arrow" width="30"
-                      height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"
-                      aria-label="Издания следующая страница">
-                      <path
-                        d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" />
-                      <path
-                        d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" />
-                      <path d="M14 20L19 15L14 10" stroke="white" />
-                    </svg>
-                  </div>
-                  <div class="swiper-pagination swiper__pagination-editions"></div>
-                </div>
-                <!-- Additional required wrapper -->
-                <ul class="swiper-wrapper swiper-wrapper-editions">
-                  <!-- Slides -->
-                  <li class="swiper-slide editions-slide">
-                    <div class="editions-slide-item">
-                      <img src="img/editions-1.jpg" alt="" class="editions-slide-img">
-                      <div class="editions-slide-block">
-                        <h5 class="editions-slide__author-book"><span class="editions-slide__book-heading">Искусство
-                            цвета</span>Иттен, Иоханнес</h5>
-                        <p class="editions-slide__price">620 руб</p>
-                      </div>
-                      <a href="" class="editions__link" aria-label="Заказать книгу">Заказать</a>
-                    </div>
-                  </li>
-                  <li class="swiper-slide editions-slide">
-                    <div class="editions-slide-item">
-                      <img src="img/editions-2.jpg" alt="Типографика Рудер, Эмиль" class="editions-slide-img">
-                      <div class="editions-slide-block">
-                        <h5 class="editions-slide__author-book"><span
-                            class="editions-slide__book-heading">Типографика</span>Рудер, Эмиль</h5>
-                        <p class="editions-slide__price">2 450 руб</p>
-                      </div>
-                      <a href="" class="editions__link" aria-label="Заказать книгу">Заказать</a>
-                    </div>
-                  </li>
-                  <li class="swiper-slide editions-slide">
-                    <div class="editions-slide-item">
-                      <img src="img/editions-3.jpg" alt="Книга про буквы Гордон, Юрий" class="editions-slide-img">
-                      <div class="editions-slide-block">
-                        <h5 class="editions-slide__author-book"><span class="editions-slide__book-heading">Книга про
-                            буквы</span>Гордон, Юрий</h5>
-                        <p class="editions-slide__price">2 200 руб</p>
-                      </div>
-                      <a href="" class="editions__link" aria-label="Заказать книгу">Заказать</a>
-                    </div>
-                  </li>
-                  <li class="swiper-slide editions-slide">
-                    <div class="editions-slide-item">
-                      <img src="img/editions-4.jpg" alt="Николай
-                      Ильин Кричевский, Владимир" class="editions-slide-img">
-                      <div class="editions-slide-block">
-                        <h5 class="editions-slide__author-book"><span class="editions-slide__book-heading">Николай
-                            Ильин</span>Кричевский, Владимир</h5>
-                        <p class="editions-slide__price">1 110 руб</p>
-                      </div>
-                      <a href="" class="editions__link" aria-label="Заказать книгу">Заказать</a>
-                    </div>
-                  </li>
-                  <li class="swiper-slide editions-slide">
-                    <div class="editions-slide-item">
-                      <img src="img/editions-5.jpg" alt="Модульные сетки Мюллер-Брокманн, Йозеф"
-                        class="editions-slide-img">
-                      <div class="editions-slide-block">
-                        <h5 class="editions-slide__author-book"><span class="editions-slide__book-heading">Модульные
-                            сетки
-                            в граф...</span>Мюллер-Брокманн, Йозеф</h5>
-                        <p class="editions-slide__price">1 450 руб</p>
-                      </div>
-                      <a href="" class="editions__link" aria-label="Заказать книгу">Заказать</a>
-                    </div>
-                  </li>
-                  <li class="swiper-slide editions-slide">
-                    <div class="editions-slide-item">
-                      <img src="img/editions-6.jpg" alt="Эволюция графических Хеллер, Чваст" class="editions-slide-img">
-                      <div class="editions-slide-block">
-                        <h5 class="editions-slide__author-book"><span class="editions-slide__book-heading">Эволюция
-                            графических ст...</span>Хеллер, Чваст</h5>
-                        <p class="editions-slide__price">3 200 руб</p>
-                      </div>
-                      <a href="" class="editions__link" aria-label="Заказать книгу">Заказать</a>
-                    </div>
-                  </li>
-                  <li class="swiper-slide editions-slide">
-                    <div class="editions-slide-item">
-                      <img src="img/editions-7.jpg" alt="Искусство и визуальное Арнхейм, Рудольф"
-                        class="editions-slide-img">
-                      <div class="editions-slide-block">
-                        <h5 class="editions-slide__author-book"><span class="editions-slide__book-heading">Искусство и
-                            визуальное в...</span>Арнхейм, Рудольф</h5>
-                        <p class="editions-slide__price">2 220 руб</p>
-                      </div>
-                      <a href="" class="editions__link" aria-label="Заказать книгу">Заказать</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -1152,7 +803,7 @@
       <!-- Projects -->
 
       <section class="projects">
-        <div class="container">
+        <div class="container container__projects">
           <h2 class="projects__heading heading-section">Проекты</h2>
           <p class="projects__content">
             Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно
@@ -1259,19 +910,19 @@
       <!-- Contacts -->
 
       <section class="contacts">
-        <h2 class="contacts__heading heading-section">Контакты</h2>
+        <h2 class="contacts__heading heading-section visually-hidden">Контакты</h2>
         <div class="contacts__flexbox">
           <div class="container-contacts">
             <div class="contacts__form-container">
               <h3 class="contacts__subtitle">Шоурум №4<span class="contacts__subtitle-adress">Леонтьевский переулок, дом
                   5/1</span></h3>
               <form action="#" class="contacts__form">
-                <p class="contacts__form-heading">Заказать обратный звонок</p>
                 <input name="Имя" type="text" placeholder="Имя*" class="contacts__name contacts__input"
                   data-validate-field="name" aria-label="Введите имя">
                 <input name="tel" type="tel" placeholder="Телефон*" class="contacts__tel contacts__input"
                   data-validate-field="tel" data-validate-rules="phone" aria-label="Укажите номер телефона">
-                <button class="contacts__btn" aria-label="Заказать обратный звонок">Заказать</button>
+                <button class="contacts__btn" aria-label="Заказать обратный звонок">Заказать обратный звонок</button>
+                <button class="contacts__btn contacts__btn-320" aria-label="Заказать обратный звонок">Заказать</button>
               </form>
               <div class="contacts__social">
                 <h3 class="contacts__social-heading">Связаться в один клик</h3>
@@ -1360,7 +1011,6 @@
     <script src="js/catalog-btn.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/tabs-artist-list.js"></script>
-    <script src="js/all-events.js"></script>
     <script src="js/just-validate.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/burger.js"></script>
