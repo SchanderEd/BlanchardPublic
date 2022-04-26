@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   document.querySelector('#xBurger').addEventListener('click', function () {
     document.querySelector('#burgerMenu').classList.remove('active-burger')
-    document.querySelector('#burgerBtn').classList.add('burger__btn--enabled')
+    document.querySelector('#burgerBtn').classList.remove('burger__btn--disabled')
     document.querySelector('#xBurger').classList.remove('burger__btn--enabled')
   })
 

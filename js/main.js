@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
         loop: false,
-        
+
 
         // If we need pagination
         pagination: {
@@ -17,7 +17,11 @@ document.addEventListener('DOMContentLoaded', function () {
             hide: true,
         },
 
+        autoplay: {
+            delay: 4000,
+        },
 
+        effect: "fade",
 
         speed: 1000,
 
@@ -109,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
             320: {
                 spaceBetween: 50,
                 slidesPerView: 1,
-                slidesPerGroup: 9
+                slidesPerGroup: 1,
             }
         }
 
@@ -145,14 +149,14 @@ document.addEventListener('DOMContentLoaded', function () {
             320: {
                 spaceBetween: 38,
                 slidesPerGroup: 1,
-                slidesPerView: 1
+                slidesPerView: 1,
             }
         },
 
         // And if we need scrollbar
         pagination: {
             el: '.swiper-pagination-events',
-          },
+        },
 
         scrollbar: {
             el: '.swiper-scrollbar',
