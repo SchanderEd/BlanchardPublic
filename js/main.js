@@ -190,6 +190,8 @@ document.addEventListener('DOMContentLoaded', function () {
             zoom: 15
         });
 
+        myMap.behaviors.disable('scrollZoom'); // Отключение зума
+
 
         // Создаём макет содержимого.
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(

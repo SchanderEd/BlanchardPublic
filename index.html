@@ -47,35 +47,19 @@
                   transform="rotate(-45 0.00012207 26.3636)" fill="white" />
               </svg></button>
           </div>
-          <div id="burgerMenu" class="burger-menu">
-            <ul class="burger-list">
-              <li class="burger-item"><a href="" class="burger-link btn-hover btn-focus">О нас</a></li>
-              <li class="burger-item"><a href="" class="burger-link btn-hover btn-focus">Галерея</a></li>
-              <li class="burger-item"><a href="" class="burger-link btn-hover btn-focus">Каталог</a></li>
-              <li class="burger-item"><a href="" class="burger-link btn-hover btn-focus">События</a></li>
-              <li class="burger-item"><a href="" class="burger-link btn-hover btn-focus">Проекты</a></li>
-              <li class="burger-item"><a href="" class="burger-link btn-hover btn-focus">Контакты</a></li>
-              <li class="burger-item"><a href="" class="burger-link burger-link-enter btn-hover btn-focus"><svg
-                    class="enter-link-svg" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
-                  </svg>Войти</a></li>
-            </ul>
-          </div>
           <a href="#" class="logo visible"><img src="img/logo.svg" alt="Blanchard" class="logo-img"></a>
           <form action="#" class="header__search-mobile">
             <button class="header__search-btn search-btn-mobile reset-btn" aria-label="Поиск по сайту"></button>
             <input type="search" class="header__search-input-mobile reset-input">
-            <a class="header__search-close reset-btn"><svg class="header__search-close-img"
-              viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="37.2801" height="3.72801"
-                transform="matrix(0.707093 0.707121 -0.707093 0.707121 3.13867 0)" fill="white" />
-              <rect width="37.2801" height="3.72801"
-                transform="matrix(0.707093 -0.707121 0.707093 0.707121 0.499023 26.3615)" fill="white" />
-            </svg></a>
+            <button class="header__search-close reset-btn"><svg class="header__search-close-img" viewBox="0 0 30 29"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="37.2801" height="3.72801"
+                  transform="matrix(0.707093 0.707121 -0.707093 0.707121 3.13867 0)" fill="white" />
+                <rect width="37.2801" height="3.72801"
+                  transform="matrix(0.707093 -0.707121 0.707093 0.707121 0.499023 26.3615)" fill="white" />
+              </svg></button>
           </form>
-          <nav class="nav-menu">
+          <nav class="nav-menu" id="burgerMenu">
             <ul class="nav-menu__list">
               <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">О нас</a>
               </li>
@@ -89,6 +73,12 @@
               </li>
               <li class="nav-menu__item"><a href="#" class="nav-menu__link btn-hover btn-focus btn-active">Контакты</a>
               </li>
+              <li class="nav-menu__item"><a href="#" class="enter-link enter-link-burger btn-hover btn-focus btn-active"><svg
+                    class="enter-link-svg" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" />
+                  </svg>Войти</a></li>
             </ul>
           </nav>
           <a href="#" class="enter-link btn-hover btn-focus btn-active"><svg class="enter-link-svg" width="13"
@@ -231,15 +221,13 @@
 
       <!--Main banner-->
 
-      <div class="main-banner">
+      <section class="main-banner">
         <div class="container main-container">
           <h2 class="main-banner__heading visible-banner heading-section">Прикоснитесь к прекрасному</h2>
           <p class="main-banner__text visible-banner">Мы вынуждены отталкиваться от того, что реализация намеченных
             плановых заданий создаёт предпосылки для новых предложений.
           </p>
-          <div class="btn-block">
-            <a href="#" class="main-banner__link-btn visible-banner">Подписаться на рассылку</a>
-          </div>
+          <a href="#" class="main-banner__link-btn visible-banner">Подписаться на рассылку</a>
         </div>
         <div class="swiper-container">
           <!-- Additional required wrapper -->
@@ -250,7 +238,7 @@
             <div class="swiper-slide slide-three"></div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!--About Us-->
 
@@ -379,18 +367,6 @@
         <div class="container catalog-container">
           <div class="catalog__top">
             <h2 class="catalog__heading heading-section">Каталог</h2>
-            <ul class="catalog__list">
-              <li class="catalog__item"><button class="catalog__tab-btn btn-french reset-btn" data-path="EmptyCountry"
-                  aria-label="Художники Франции"></button></li>
-              <li class="catalog__item"><button class="catalog__tab-btn btn-germany reset-btn" data-path="EmptyCountry"
-                  aria-label="Художники Германии"></button></li>
-              <li class="catalog__item"><button class="catalog__tab-btn catalog__tab-btn--active btn-italy reset-btn"
-                  data-path="Italy" aria-label="Художники Италии"></button></li>
-              <li class="catalog__item"><button class="catalog__tab-btn btn-russia reset-btn" data-path="EmptyCountry"
-                  aria-label="Художнии России"></button></li>
-              <li class="catalog__item"><button class="catalog__tab-btn btn-belgium reset-btn" data-path="EmptyCountry"
-                  aria-label="Художники Бельгии"></button></li>
-            </ul>
           </div>
           <div class="catalog__middle">
             <p class="catalog__text">Акционеры крупнейших компаний, которые представляют собой яркий пример
@@ -602,133 +578,6 @@
                 </li>
               </ul>
             </div>
-
-          </div>
-
-          <div class="catalog__bottom animate" data-target="EmptyCountry">
-            <div class="catalog__about-artist about-artist-content--active animate__animated animate__fadeInLeft">
-              <div
-                class="catalog__about-artist-empty about-artist-content--active animate__animated animate__fadeInLeft">
-                <img src="img/empty_artist.png" alt="" class="catalog__img-artist-empty">
-                <h3 class="catalog__heading-artist-empty">Х - Художник</h3>
-                <p class="catalog__about-artist-text catalog__about-artist-text-empty">
-                  <span class="catalog__about-artist-empty-know">Что мы о нём знаем?.</span>
-                  Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!
-                </p>
-                <a href="#gallery" class="catalog__about-artist-empty-link">В галерею</a>
-              </div>
-            </div>
-            <div class="catalog__accordeon">
-              <ul class="catalog__accordeon-list accordion" id="accordionEmpty">
-                <li class="catalog__accordeon-item"><button
-                    class="catalog__accordeon-btn catalog__accordeon-btn-1 reset-btn"
-                    aria-label="Худождники с 1400 по 1499 гг.">C 1400 по 1499
-                    гг.</button>
-                  <div class="catalog__accordion-empty catalog__accordion-empty-country" style="display: flex;">
-                    <div class="catalog__empty-left">
-                      <img src="img/empty_sq.png" alt="Тут нет художников" class="catalog__artist-empty-list">
-                    </div>
-                    <div class="catalog__empty-right">
-                      <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
-                      <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
-                        себя
-                      </p><a href="#gallery" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__accordeon-item"><button
-                    class="catalog__accordeon-btn catalog__accordeon-btn-2 reset-btn"
-                    aria-label="Худождники с 1500 по 1599 гг.">C 1500 по 1599
-                    гг.</button>
-                  <div class="catalog__accordion-empty" style="display: flex;">
-                    <div class="catalog__empty-left">
-                      <img src="img/empty_sq.png" alt="Тут нет художников" class="catalog__artist-empty-list">
-                    </div>
-                    <div class="catalog__empty-right">
-                      <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
-                      <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
-                        себя
-                      </p><a href="#gallery" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn"
-                    aria-label="Худождники с 1600 по 1699 гг.">C 1600 по 1699
-                    гг.</button>
-                  <div class="catalog__accordion-empty" style="display: flex;">
-                    <div class="catalog__empty-left">
-                      <img src="img/empty_sq.png" alt="Тут нет художников" class="catalog__artist-empty-list">
-                    </div>
-                    <div class="catalog__empty-right">
-                      <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
-                      <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
-                        себя
-                      </p><a href="#gallery" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__accordeon-item"><button
-                    class="catalog__accordeon-btn catalog__accordeon-btn-4 reset-btn"
-                    aria-label="Худождники с 1700 по 1799 гг.">C 1700 по 1799
-                    гг.</button>
-                  <div class="catalog__accordion-empty" style="display: flex;">
-                    <div class="catalog__empty-left">
-                      <img src="img/empty_sq.png" alt="Тут нет художников" class="catalog__artist-empty-list">
-                    </div>
-                    <div class="catalog__empty-right">
-                      <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
-                      <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
-                        себя
-                      </p><a href="#gallery" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn"
-                    aria-label="Худождники с 1800 по 1899 гг.">C 1800 по 1899
-                    гг.</button>
-                  <div class="catalog__accordion-empty" style="display: flex;">
-                    <div class="catalog__empty-left">
-                      <img src="img/empty_sq.png" alt="Тут нет художников" class="catalog__artist-empty-list">
-                    </div>
-                    <div class="catalog__empty-right">
-                      <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
-                      <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
-                        себя
-                      </p><a href="#gallery" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn"
-                    aria-label="Худождники с 1900 по 1999 гг.">C 1900 по 1999
-                    гг.</button>
-                  <div class="catalog__accordion-empty" style="display: flex;">
-                    <div class="catalog__empty-left">
-                      <img src="img/empty_sq.png" alt="Тут нет художников" class="catalog__artist-empty-list">
-                    </div>
-                    <div class="catalog__empty-right">
-                      <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
-                      <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
-                        себя
-                      </p><a href="#gallery" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="catalog__accordeon-item"><button class="catalog__accordeon-btn reset-btn"
-                    aria-label="Худождники с 2000 г.">C 2000 г.</button>
-                  <div class="catalog__accordion-empty" style="display: flex;">
-                    <div class="catalog__empty-left">
-                      <img src="img/empty_sq.png" alt="Тут нет художников" class="catalog__artist-empty-list">
-                    </div>
-                    <div class="catalog__empty-right">
-                      <span class="catalog__accrodion-empty-heading">Здесь пока пусто</span>
-                      <p class="catalog__accordion-empty-text">А в галерее вы всегда можете найти что-то интересное для
-                        себя
-                      </p><a href="#gallery" class="catalog__accordion-empty-link btn-hover btn-focus">В галерею</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
@@ -798,14 +647,14 @@
             <div class="swiper-pagination swiper-pagination-events"></div>
           </div>
           <div class="events__swiper-button-next"><svg class="evenst-arrow-btn" viewBox="0 0 50 50"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" />
-            <path
-              d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" />
-            <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black" />
-          </svg>
-        </div>
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" />
+              <path
+                d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z" />
+              <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black" />
+            </svg>
+          </div>
         </div>
       </section>
 
@@ -921,6 +770,7 @@
       <section class="contacts">
         <h2 class="contacts__heading heading-section visually-hidden">Контакты</h2>
         <div class="contacts__flexbox">
+          <div class="contacts__top">
           <div class="container-contacts">
             <div class="contacts__form-container">
               <h3 class="contacts__subtitle">Шоурум №4<span class="contacts__subtitle-adress">Леонтьевский переулок, дом
@@ -964,6 +814,7 @@
               </div>
             </div>
           </div>
+          </div>
           <div class="map" id="map"></div>
         </div>
       </section>
@@ -972,8 +823,7 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <a href="#" class="footer__logo"><img src="img/logo.svg" alt="Blanchard"
-            class="logo-img logo-img-footer"></a>
+        <a href="#" class="footer__logo"><img src="img/logo.svg" alt="Blanchard" class="logo-img logo-img-footer"></a>
         <ul class="footer__social-list">
           <li class="footer__social-item"><a href="#" class="footer__social-link" aria-label="Ссылка на вконтакте"><svg
                 class="footer__social-svg" width="45" height="45" viewBox="0 0 45 45" fill="none"
